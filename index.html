@@ -1,0 +1,4239 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_0d7f43bf948d47ca9b9af1044393fa75 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/marslan390/BeautifyMarker/master/leaflet-beautify-marker-icon.css"/>
+    <script src="https://rawcdn.githack.com/marslan390/BeautifyMarker/master/leaflet-beautify-marker-icon.js"></script>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_0d7f43bf948d47ca9b9af1044393fa75" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_0d7f43bf948d47ca9b9af1044393fa75 = L.map(
+        'map_0d7f43bf948d47ca9b9af1044393fa75', {
+        center: [-19.675075152873568, -47.796810185057446],
+        zoom: 9,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_3caec84c39604dc987888efc183bff60 = L.tileLayer(
+        'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+    
+            var circle_marker_7e4771c497fc4c568a5fb33459dfe45d = L.circleMarker(
+                [-18.9127749, -48.2755227],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#aaffc3",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#aaffc3",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_5443e00972244b12914d63b92a4e8d96 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_3ba666e4b89144788a671b5df69544ef = $(`<div id="html_3ba666e4b89144788a671b5df69544ef" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>UBERLANDIA, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>15</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-18.9127749,-48.2755227</strong></h4></b><h4> <b>População :&nbsp<strong>706.597</strong></h4></b></div>`)[0];
+                popup_5443e00972244b12914d63b92a4e8d96.setContent(html_3ba666e4b89144788a671b5df69544ef);
+            
+
+            circle_marker_7e4771c497fc4c568a5fb33459dfe45d.bindPopup(popup_5443e00972244b12914d63b92a4e8d96)
+            ;
+
+            
+        
+    
+            var circle_marker_47c5ce1d79974d7b9a404dd1a12efe6c = L.circleMarker(
+                [-18.9127749, -48.2755227],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#aaffc3",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#aaffc3",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_e3f9e02684cd4225a45b5e17a5c6accc = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_93e62ed96cc34706991fe0818a90a1ce = $(`<div id="html_93e62ed96cc34706991fe0818a90a1ce" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>UBERLANDIA, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>15</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-18.9127749,-48.2755227</strong></h4></b><h4> <b>População :&nbsp<strong>706.597</strong></h4></b></div>`)[0];
+                popup_e3f9e02684cd4225a45b5e17a5c6accc.setContent(html_93e62ed96cc34706991fe0818a90a1ce);
+            
+
+            circle_marker_47c5ce1d79974d7b9a404dd1a12efe6c.bindPopup(popup_e3f9e02684cd4225a45b5e17a5c6accc)
+            ;
+
+            
+        
+    
+            var circle_marker_6be3072f5fb04d71b48a3beb167a99dd = L.circleMarker(
+                [-20.5394551, -47.4010979],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#4363d8",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#4363d8",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_d17ccb80da9c4c7a8696440f82288a72 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_a02a0c9258444730be74ccc8b6cb05f6 = $(`<div id="html_a02a0c9258444730be74ccc8b6cb05f6" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>FRANCA, SP ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>23</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-20.5394551,-47.4010979</strong></h4></b><h4> <b>População :&nbsp<strong>358.539</strong></h4></b></div>`)[0];
+                popup_d17ccb80da9c4c7a8696440f82288a72.setContent(html_a02a0c9258444730be74ccc8b6cb05f6);
+            
+
+            circle_marker_6be3072f5fb04d71b48a3beb167a99dd.bindPopup(popup_d17ccb80da9c4c7a8696440f82288a72)
+            ;
+
+            
+        
+    
+            var circle_marker_29d6ace5945e4e3d99e75991523e1c6c = L.circleMarker(
+                [-20.5394551, -47.4010979],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#4363d8",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#4363d8",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_1e77f0c2b5c842018b95d18528287946 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_4c3d7fc8746c41979da3eb2305f2fde6 = $(`<div id="html_4c3d7fc8746c41979da3eb2305f2fde6" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>FRANCA, SP ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>23</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-20.5394551,-47.4010979</strong></h4></b><h4> <b>População :&nbsp<strong>358.539</strong></h4></b></div>`)[0];
+                popup_1e77f0c2b5c842018b95d18528287946.setContent(html_4c3d7fc8746c41979da3eb2305f2fde6);
+            
+
+            circle_marker_29d6ace5945e4e3d99e75991523e1c6c.bindPopup(popup_1e77f0c2b5c842018b95d18528287946)
+            ;
+
+            
+        
+    
+            var circle_marker_8c45e78cbf114b3182549ac098fa97ed = L.circleMarker(
+                [-19.7460372, -47.9339936],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#f7820c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#f7820c",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_5e5caecf314d46a3a1806af069ebe907 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_3eeee6e97a484454b52f67456ab07036 = $(`<div id="html_3eeee6e97a484454b52f67456ab07036" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>UBERABA, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>17</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.7460372,-47.9339936</strong></h4></b><h4> <b>População :&nbsp<strong>340.277</strong></h4></b></div>`)[0];
+                popup_5e5caecf314d46a3a1806af069ebe907.setContent(html_3eeee6e97a484454b52f67456ab07036);
+            
+
+            circle_marker_8c45e78cbf114b3182549ac098fa97ed.bindPopup(popup_5e5caecf314d46a3a1806af069ebe907)
+            ;
+
+            
+        
+    
+            var circle_marker_e84e7beb9acf409fa0b9d36eaf773080 = L.circleMarker(
+                [-19.7460372, -47.9339936],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#f7820c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#f7820c",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_72e4522c76b84019a840d7b2b7dd85d0 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_232abc2c09c245fba88482f1c819a5b4 = $(`<div id="html_232abc2c09c245fba88482f1c819a5b4" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>UBERABA, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>17</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.7460372,-47.9339936</strong></h4></b><h4> <b>População :&nbsp<strong>340.277</strong></h4></b></div>`)[0];
+                popup_72e4522c76b84019a840d7b2b7dd85d0.setContent(html_232abc2c09c245fba88482f1c819a5b4);
+            
+
+            circle_marker_e84e7beb9acf409fa0b9d36eaf773080.bindPopup(popup_72e4522c76b84019a840d7b2b7dd85d0)
+            ;
+
+            
+        
+    
+            var circle_marker_dee6df232f6f4ef2b78414f29e0ffea0 = L.circleMarker(
+                [-18.5961683, -46.5150076],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#e6194b",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#e6194b",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_74ea248867334f16b746aba654d6d384 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_05605cfc76e449b89376acb7ebbddbb7 = $(`<div id="html_05605cfc76e449b89376acb7ebbddbb7" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>PATOS DE MINAS, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>0</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-18.5961683,-46.5150076</strong></h4></b><h4> <b>População :&nbsp<strong>154.641</strong></h4></b></div>`)[0];
+                popup_74ea248867334f16b746aba654d6d384.setContent(html_05605cfc76e449b89376acb7ebbddbb7);
+            
+
+            circle_marker_dee6df232f6f4ef2b78414f29e0ffea0.bindPopup(popup_74ea248867334f16b746aba654d6d384)
+            ;
+
+            
+        
+    
+            var circle_marker_e662c2b85da742ad874bcb927b40fe84 = L.circleMarker(
+                [-18.5961683, -46.5150076],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#e6194b",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#e6194b",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_982ddb3a6f4e4d269a2e916a330fb6fb = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_304af6d511a149899bb9698349d1ea1e = $(`<div id="html_304af6d511a149899bb9698349d1ea1e" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>PATOS DE MINAS, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>0</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-18.5961683,-46.5150076</strong></h4></b><h4> <b>População :&nbsp<strong>154.641</strong></h4></b></div>`)[0];
+                popup_982ddb3a6f4e4d269a2e916a330fb6fb.setContent(html_304af6d511a149899bb9698349d1ea1e);
+            
+
+            circle_marker_e662c2b85da742ad874bcb927b40fe84.bindPopup(popup_982ddb3a6f4e4d269a2e916a330fb6fb)
+            ;
+
+            
+        
+    
+            var circle_marker_6067506153ba4d6ea2c6fe0831eaa9af = L.circleMarker(
+                [-18.9745738, -49.4600885],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#bcf60c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#bcf60c",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_e96f5b8ffe584e6097ce7064c88581d1 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_5c9bb23c549b41f190c4cb9beb4d66a0 = $(`<div id="html_5c9bb23c549b41f190c4cb9beb4d66a0" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>ITUIUTABA, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>8</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-18.9745738,-49.4600885</strong></h4></b><h4> <b>População :&nbsp<strong>105.818</strong></h4></b></div>`)[0];
+                popup_e96f5b8ffe584e6097ce7064c88581d1.setContent(html_5c9bb23c549b41f190c4cb9beb4d66a0);
+            
+
+            circle_marker_6067506153ba4d6ea2c6fe0831eaa9af.bindPopup(popup_e96f5b8ffe584e6097ce7064c88581d1)
+            ;
+
+            
+        
+    
+            var circle_marker_dafd8141390240a490b03546a842510f = L.circleMarker(
+                [-18.9745738, -49.4600885],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#bcf60c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#bcf60c",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_ccaf0473c95248aeb36c5b0aea0557fb = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_ffb772264d5047f7a1d18b4eea424d96 = $(`<div id="html_ffb772264d5047f7a1d18b4eea424d96" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>ITUIUTABA, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>8</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-18.9745738,-49.4600885</strong></h4></b><h4> <b>População :&nbsp<strong>105.818</strong></h4></b></div>`)[0];
+                popup_ccaf0473c95248aeb36c5b0aea0557fb.setContent(html_ffb772264d5047f7a1d18b4eea424d96);
+            
+
+            circle_marker_dafd8141390240a490b03546a842510f.bindPopup(popup_ccaf0473c95248aeb36c5b0aea0557fb)
+            ;
+
+            
+        
+    
+            var circle_marker_39c0735049f74d0d8a00fde46bbc81bc = L.circleMarker(
+                [-18.4166854, -49.2170785],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3cb44b",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3cb44b",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_34c1be98e8f346a88d0d97fddd3d4827 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_0b3c6862362d43bbacbbb5a6de1efbeb = $(`<div id="html_0b3c6862362d43bbacbbb5a6de1efbeb" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>ITUMBIARA, GO ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>21</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-18.4166854,-49.2170785</strong></h4></b><h4> <b>População :&nbsp<strong>106.845</strong></h4></b></div>`)[0];
+                popup_34c1be98e8f346a88d0d97fddd3d4827.setContent(html_0b3c6862362d43bbacbbb5a6de1efbeb);
+            
+
+            circle_marker_39c0735049f74d0d8a00fde46bbc81bc.bindPopup(popup_34c1be98e8f346a88d0d97fddd3d4827)
+            ;
+
+            
+        
+    
+            var circle_marker_be4ddbbb05254143ba5942e3ef732c44 = L.circleMarker(
+                [-18.4166854, -49.2170785],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3cb44b",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3cb44b",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_7c3f441ba9e745e39626fc0fd5f6cff9 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_6cb78032fb164dcbb2be1ba0619b3226 = $(`<div id="html_6cb78032fb164dcbb2be1ba0619b3226" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>ITUMBIARA, GO ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>21</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-18.4166854,-49.2170785</strong></h4></b><h4> <b>População :&nbsp<strong>106.845</strong></h4></b></div>`)[0];
+                popup_7c3f441ba9e745e39626fc0fd5f6cff9.setContent(html_6cb78032fb164dcbb2be1ba0619b3226);
+            
+
+            circle_marker_be4ddbbb05254143ba5942e3ef732c44.bindPopup(popup_7c3f441ba9e745e39626fc0fd5f6cff9)
+            ;
+
+            
+        
+    
+            var circle_marker_e55cf750509b4ea0862b816ba9e4af2a = L.circleMarker(
+                [-19.8777714, -44.9856483],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#4363d8",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#4363d8",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_a9ff9f5e180b463d971175c0774980ca = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_20e12b951a65413697e3024016a29fe2 = $(`<div id="html_20e12b951a65413697e3024016a29fe2" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>NOVA SERRANA, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>3</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.8777714,-44.9856483</strong></h4></b><h4> <b>População :&nbsp<strong>108.241</strong></h4></b></div>`)[0];
+                popup_a9ff9f5e180b463d971175c0774980ca.setContent(html_20e12b951a65413697e3024016a29fe2);
+            
+
+            circle_marker_e55cf750509b4ea0862b816ba9e4af2a.bindPopup(popup_a9ff9f5e180b463d971175c0774980ca)
+            ;
+
+            
+        
+    
+            var circle_marker_16b74b40131847a09b5fc4b567735c0e = L.circleMarker(
+                [-19.8777714, -44.9856483],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#4363d8",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#4363d8",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_796ebe386da84953a8741e9ece54b59d = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_8cdbc3cc16f94fcea9c2782001b56d78 = $(`<div id="html_8cdbc3cc16f94fcea9c2782001b56d78" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>NOVA SERRANA, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>3</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.8777714,-44.9856483</strong></h4></b><h4> <b>População :&nbsp<strong>108.241</strong></h4></b></div>`)[0];
+                popup_796ebe386da84953a8741e9ece54b59d.setContent(html_8cdbc3cc16f94fcea9c2782001b56d78);
+            
+
+            circle_marker_16b74b40131847a09b5fc4b567735c0e.bindPopup(popup_796ebe386da84953a8741e9ece54b59d)
+            ;
+
+            
+        
+    
+            var circle_marker_9b06caa31ff34609b5a473b3865331c8 = L.circleMarker(
+                [-19.8590162, -44.61021],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#e6beff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#e6beff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_7c9ec2170e9348a89ce2d5fcf136345d = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_02a8fdebbb59413a88f03c6db6e9d2b0 = $(`<div id="html_02a8fdebbb59413a88f03c6db6e9d2b0" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>PARA DE MINAS, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>11</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.8590162,-44.61021</strong></h4></b><h4> <b>População :&nbsp<strong>95.616</strong></h4></b></div>`)[0];
+                popup_7c9ec2170e9348a89ce2d5fcf136345d.setContent(html_02a8fdebbb59413a88f03c6db6e9d2b0);
+            
+
+            circle_marker_9b06caa31ff34609b5a473b3865331c8.bindPopup(popup_7c9ec2170e9348a89ce2d5fcf136345d)
+            ;
+
+            
+        
+    
+            var circle_marker_664f6bafe93f4cefb83d6b82689dc348 = L.circleMarker(
+                [-19.8590162, -44.61021],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#e6beff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#e6beff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_3f47e753529043d998712dab48440aab = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_8870c6e15fe54e3c812b016f0deb3434 = $(`<div id="html_8870c6e15fe54e3c812b016f0deb3434" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>PARA DE MINAS, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>11</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.8590162,-44.61021</strong></h4></b><h4> <b>População :&nbsp<strong>95.616</strong></h4></b></div>`)[0];
+                popup_3f47e753529043d998712dab48440aab.setContent(html_8870c6e15fe54e3c812b016f0deb3434);
+            
+
+            circle_marker_664f6bafe93f4cefb83d6b82689dc348.bindPopup(popup_3f47e753529043d998712dab48440aab)
+            ;
+
+            
+        
+    
+            var circle_marker_423d04aca14848fb8bc8976d04ce8d2e = L.circleMarker(
+                [-20.8861299, -47.5853958],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#e6194b",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#e6194b",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_a42f4b423dff46339197f83259101f3d = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_199c083ce3174d3e9158a26705d5b69f = $(`<div id="html_199c083ce3174d3e9158a26705d5b69f" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>BATATAIS, SP ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>20</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-20.8861299,-47.5853958</strong></h4></b><h4> <b>População :&nbsp<strong>63.438</strong></h4></b></div>`)[0];
+                popup_a42f4b423dff46339197f83259101f3d.setContent(html_199c083ce3174d3e9158a26705d5b69f);
+            
+
+            circle_marker_423d04aca14848fb8bc8976d04ce8d2e.bindPopup(popup_a42f4b423dff46339197f83259101f3d)
+            ;
+
+            
+        
+    
+            var circle_marker_74ae6ab1b57449329cc9184784cdbc9c = L.circleMarker(
+                [-20.8861299, -47.5853958],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#e6194b",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#e6194b",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_28c8f8903bcc447ea81024db5c286cf2 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_ec963f7c3c7d4d4f8108d9591ae3dbad = $(`<div id="html_ec963f7c3c7d4d4f8108d9591ae3dbad" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>BATATAIS, SP ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>20</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-20.8861299,-47.5853958</strong></h4></b><h4> <b>População :&nbsp<strong>63.438</strong></h4></b></div>`)[0];
+                popup_28c8f8903bcc447ea81024db5c286cf2.setContent(html_ec963f7c3c7d4d4f8108d9591ae3dbad);
+            
+
+            circle_marker_74ae6ab1b57449329cc9184784cdbc9c.bindPopup(popup_28c8f8903bcc447ea81024db5c286cf2)
+            ;
+
+            
+        
+    
+            var circle_marker_d91457a184c84f96b9f2966451a0ae13 = L.circleMarker(
+                [-20.0263494, -48.9362703],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#fabebe",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#fabebe",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_6da7aa7d51cd4aef9f535939493ba134 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_e16fc46b1af1487a9a55b1dba808421e = $(`<div id="html_e16fc46b1af1487a9a55b1dba808421e" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>FRUTAL, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>9</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-20.0263494,-48.9362703</strong></h4></b><h4> <b>População :&nbsp<strong>60.508</strong></h4></b></div>`)[0];
+                popup_6da7aa7d51cd4aef9f535939493ba134.setContent(html_e16fc46b1af1487a9a55b1dba808421e);
+            
+
+            circle_marker_d91457a184c84f96b9f2966451a0ae13.bindPopup(popup_6da7aa7d51cd4aef9f535939493ba134)
+            ;
+
+            
+        
+    
+            var circle_marker_b87c3e72f947476e86cd0b4d843ccde1 = L.circleMarker(
+                [-20.0263494, -48.9362703],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#fabebe",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#fabebe",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_cfe4ea5f62ed41d8a6b2108927fdad15 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_00a683875edc41cfb7f77f6ce4972db1 = $(`<div id="html_00a683875edc41cfb7f77f6ce4972db1" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>FRUTAL, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>9</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-20.0263494,-48.9362703</strong></h4></b><h4> <b>População :&nbsp<strong>60.508</strong></h4></b></div>`)[0];
+                popup_cfe4ea5f62ed41d8a6b2108927fdad15.setContent(html_00a683875edc41cfb7f77f6ce4972db1);
+            
+
+            circle_marker_b87c3e72f947476e86cd0b4d843ccde1.bindPopup(popup_cfe4ea5f62ed41d8a6b2108927fdad15)
+            ;
+
+            
+        
+    
+            var circle_marker_384e701bd6c0443ca85d11e869fdf63a = L.circleMarker(
+                [-20.5850618, -47.8645776],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffe119",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffe119",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_1aa184cb4056468ba965c37987381f50 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_aaa41c371d3a415285a273fdd0484e31 = $(`<div id="html_aaa41c371d3a415285a273fdd0484e31" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>SAO JOAQUIM DA BARRA, SP ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>2</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-20.5850618,-47.8645776</strong></h4></b><h4> <b>População :&nbsp<strong>52.737</strong></h4></b></div>`)[0];
+                popup_1aa184cb4056468ba965c37987381f50.setContent(html_aaa41c371d3a415285a273fdd0484e31);
+            
+
+            circle_marker_384e701bd6c0443ca85d11e869fdf63a.bindPopup(popup_1aa184cb4056468ba965c37987381f50)
+            ;
+
+            
+        
+    
+            var circle_marker_728a5d3bfd2446bca54163e959946c0c = L.circleMarker(
+                [-20.5850618, -47.8645776],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffe119",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffe119",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_ba38a766a675475ba61c7d617bde189f = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_e0496198d68b443f8f3f2ab3d31ab3ef = $(`<div id="html_e0496198d68b443f8f3f2ab3d31ab3ef" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>SAO JOAQUIM DA BARRA, SP ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>2</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-20.5850618,-47.8645776</strong></h4></b><h4> <b>População :&nbsp<strong>52.737</strong></h4></b></div>`)[0];
+                popup_ba38a766a675475ba61c7d617bde189f.setContent(html_e0496198d68b443f8f3f2ab3d31ab3ef);
+            
+
+            circle_marker_728a5d3bfd2446bca54163e959946c0c.bindPopup(popup_ba38a766a675475ba61c7d617bde189f)
+            ;
+
+            
+        
+    
+            var circle_marker_cbfcc140bca74f62bad943d5a2e3f1f4 = L.circleMarker(
+                [-20.7172291, -47.8803129],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffe119",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffe119",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_5e9c887ac0b74464a55873a7ebb25f18 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_d588aa0415d543c881d6db83a0af8300 = $(`<div id="html_d588aa0415d543c881d6db83a0af8300" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>ORLANDIA, SP ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>2</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-20.7172291,-47.8803129</strong></h4></b><h4> <b>Distance :&nbsp<strong>19.1 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>15.5 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>44.682</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-20.5850618,-47.8645776&destination=-20.7172291,-47.8803129 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_5e9c887ac0b74464a55873a7ebb25f18.setContent(html_d588aa0415d543c881d6db83a0af8300);
+            
+
+            circle_marker_cbfcc140bca74f62bad943d5a2e3f1f4.bindPopup(popup_5e9c887ac0b74464a55873a7ebb25f18)
+            ;
+
+            
+        
+    
+            var circle_marker_a7e48c6fcf0a414ea02f6c8feb359654 = L.circleMarker(
+                [-21.0275952, -47.7772027],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#e6194b",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#e6194b",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_d6db99249597453da36a04919fc2af32 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_4203dc3233ac433996ec4f8ed265f553 = $(`<div id="html_4203dc3233ac433996ec4f8ed265f553" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>JARDINOPOLIS, SP ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>20</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-21.0275952,-47.7772027</strong></h4></b><h4> <b>Distance :&nbsp<strong>30.8 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>30.5 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>45.544</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-20.8861299,-47.5853958&destination=-21.0275952,-47.7772027 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_d6db99249597453da36a04919fc2af32.setContent(html_4203dc3233ac433996ec4f8ed265f553);
+            
+
+            circle_marker_a7e48c6fcf0a414ea02f6c8feb359654.bindPopup(popup_d6db99249597453da36a04919fc2af32)
+            ;
+
+            
+        
+    
+            var circle_marker_aca90c4322194ef6a6ace48a5cefd13c = L.circleMarker(
+                [-19.6766166, -51.1916824],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#000075",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#000075",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_a5feb66dd5b04154a9a15bca67db28bb = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_c7c9bd90643e48b89f74309c7b4c9cf1 = $(`<div id="html_c7c9bd90643e48b89f74309c7b4c9cf1" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>PARANAIBA, MS ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>18</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.6766166,-51.1916824</strong></h4></b><h4> <b>População :&nbsp<strong>42.401</strong></h4></b></div>`)[0];
+                popup_a5feb66dd5b04154a9a15bca67db28bb.setContent(html_c7c9bd90643e48b89f74309c7b4c9cf1);
+            
+
+            circle_marker_aca90c4322194ef6a6ace48a5cefd13c.bindPopup(popup_a5feb66dd5b04154a9a15bca67db28bb)
+            ;
+
+            
+        
+    
+            var circle_marker_831a3be5aefc4c859a2ed256ceb7cc94 = L.circleMarker(
+                [-19.6766166, -51.1916824],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#000075",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#000075",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_6c1c998588bc4200a65c191c363edce3 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_9f3bce4b6a294c12a2345236623a8ce9 = $(`<div id="html_9f3bce4b6a294c12a2345236623a8ce9" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>PARANAIBA, MS ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>18</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.6766166,-51.1916824</strong></h4></b><h4> <b>População :&nbsp<strong>42.401</strong></h4></b></div>`)[0];
+                popup_6c1c998588bc4200a65c191c363edce3.setContent(html_9f3bce4b6a294c12a2345236623a8ce9);
+            
+
+            circle_marker_831a3be5aefc4c859a2ed256ceb7cc94.bindPopup(popup_6c1c998588bc4200a65c191c363edce3)
+            ;
+
+            
+        
+    
+            var circle_marker_68215b6015744bb29988418551ea3666 = L.circleMarker(
+                [-20.3358968, -47.7909635],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#800000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#800000",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_c2c6bd6cebac4db2a8536af4c7870cf8 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_9f900457440a4972bfcb7d0451c2b330 = $(`<div id="html_9f900457440a4972bfcb7d0451c2b330" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>ITUVERAVA, SP ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>14</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-20.3358968,-47.7909635</strong></h4></b><h4> <b>População :&nbsp<strong>42.259</strong></h4></b></div>`)[0];
+                popup_c2c6bd6cebac4db2a8536af4c7870cf8.setContent(html_9f900457440a4972bfcb7d0451c2b330);
+            
+
+            circle_marker_68215b6015744bb29988418551ea3666.bindPopup(popup_c2c6bd6cebac4db2a8536af4c7870cf8)
+            ;
+
+            
+        
+    
+            var circle_marker_1e1a21f00af44413ae5e031b9610fb9e = L.circleMarker(
+                [-20.3358968, -47.7909635],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#800000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#800000",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_9bcdebfe989742f39cedd3397f77daa5 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_cd7d663f2eee4049ab3056b73bf838e1 = $(`<div id="html_cd7d663f2eee4049ab3056b73bf838e1" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>ITUVERAVA, SP ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>14</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-20.3358968,-47.7909635</strong></h4></b><h4> <b>População :&nbsp<strong>42.259</strong></h4></b></div>`)[0];
+                popup_9bcdebfe989742f39cedd3397f77daa5.setContent(html_cd7d663f2eee4049ab3056b73bf838e1);
+            
+
+            circle_marker_1e1a21f00af44413ae5e031b9610fb9e.bindPopup(popup_9bcdebfe989742f39cedd3397f77daa5)
+            ;
+
+            
+        
+    
+            var circle_marker_c39e1d66eeec4567b5c328314890f6dc = L.circleMarker(
+                [-20.3254581, -48.3108683],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#fabebe",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#fabebe",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_ff2e2857369846f49a7aa00c30d6aad9 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_781674e58ca54910ad2cf9f80e7981d8 = $(`<div id="html_781674e58ca54910ad2cf9f80e7981d8" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>GUAIRA, SP ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>9</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-20.3254581,-48.3108683</strong></h4></b><h4> <b>Distance :&nbsp<strong>115.2 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>84.0 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>41.283</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-20.0263494,-48.9362703&destination=-20.3254581,-48.3108683 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_ff2e2857369846f49a7aa00c30d6aad9.setContent(html_781674e58ca54910ad2cf9f80e7981d8);
+            
+
+            circle_marker_c39e1d66eeec4567b5c328314890f6dc.bindPopup(popup_ff2e2857369846f49a7aa00c30d6aad9)
+            ;
+
+            
+        
+    
+            var circle_marker_20a6181c4a7b4e68b6a11a0b5958bbce = L.circleMarker(
+                [-19.7270345, -50.1938389],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#911eb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#911eb4",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_6aae1237180f4d198dd168b627c29113 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_65d7740d98b348269c9e1307948e8899 = $(`<div id="html_65d7740d98b348269c9e1307948e8899" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>ITURAMA, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>5</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.7270345,-50.1938389</strong></h4></b><h4> <b>População :&nbsp<strong>40.101</strong></h4></b></div>`)[0];
+                popup_6aae1237180f4d198dd168b627c29113.setContent(html_65d7740d98b348269c9e1307948e8899);
+            
+
+            circle_marker_20a6181c4a7b4e68b6a11a0b5958bbce.bindPopup(popup_6aae1237180f4d198dd168b627c29113)
+            ;
+
+            
+        
+    
+            var circle_marker_9426d2a886e242f9bc483f57a5683ebc = L.circleMarker(
+                [-19.7270345, -50.1938389],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#911eb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#911eb4",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_2021fe50da44493480ca782c6b5ee65a = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_d53dd3e2869248e28372689252a65e4f = $(`<div id="html_d53dd3e2869248e28372689252a65e4f" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>ITURAMA, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>5</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.7270345,-50.1938389</strong></h4></b><h4> <b>População :&nbsp<strong>40.101</strong></h4></b></div>`)[0];
+                popup_2021fe50da44493480ca782c6b5ee65a.setContent(html_d53dd3e2869248e28372689252a65e4f);
+            
+
+            circle_marker_9426d2a886e242f9bc483f57a5683ebc.bindPopup(popup_2021fe50da44493480ca782c6b5ee65a)
+            ;
+
+            
+        
+    
+            var circle_marker_bb301cda0e6a423381c90b17e17958c2 = L.circleMarker(
+                [-20.7334707, -48.0595513],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffe119",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffe119",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_bf1a3bdedbd843cfaf2303bc0d1f4107 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_3d49b9a0010b4e27aa59e1a557140301 = $(`<div id="html_3d49b9a0010b4e27aa59e1a557140301" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>MORRO AGUDO, SP ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>2</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-20.7334707,-48.0595513</strong></h4></b><h4> <b>Distance :&nbsp<strong>30.7 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>32.6 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>33.598</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-20.5850618,-47.8645776&destination=-20.7334707,-48.0595513 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_bf1a3bdedbd843cfaf2303bc0d1f4107.setContent(html_3d49b9a0010b4e27aa59e1a557140301);
+            
+
+            circle_marker_bb301cda0e6a423381c90b17e17958c2.bindPopup(popup_bf1a3bdedbd843cfaf2303bc0d1f4107)
+            ;
+
+            
+        
+    
+            var circle_marker_07d2446e56ad4579afff047ad1fc4e72 = L.circleMarker(
+                [-18.9997131, -46.3126967],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffe119",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffe119",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_377308cac5604c8381f86631a1401c15 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_d03363be641147e298e176c5d122377e = $(`<div id="html_d03363be641147e298e176c5d122377e" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>CARMO DO PARANAIBA, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>22</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-18.9997131,-46.3126967</strong></h4></b><h4> <b>População :&nbsp<strong>30.339</strong></h4></b></div>`)[0];
+                popup_377308cac5604c8381f86631a1401c15.setContent(html_d03363be641147e298e176c5d122377e);
+            
+
+            circle_marker_07d2446e56ad4579afff047ad1fc4e72.bindPopup(popup_377308cac5604c8381f86631a1401c15)
+            ;
+
+            
+        
+    
+            var circle_marker_7fff907e8aaf41d183af8f189353c1f5 = L.circleMarker(
+                [-18.9997131, -46.3126967],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffe119",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffe119",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_5bb94d88f19c40e4ba7d114bf791b973 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_c4d4de5808fb4f0ea74c2c5b163bf908 = $(`<div id="html_c4d4de5808fb4f0ea74c2c5b163bf908" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>CARMO DO PARANAIBA, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>22</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-18.9997131,-46.3126967</strong></h4></b><h4> <b>População :&nbsp<strong>30.339</strong></h4></b></div>`)[0];
+                popup_5bb94d88f19c40e4ba7d114bf791b973.setContent(html_c4d4de5808fb4f0ea74c2c5b163bf908);
+            
+
+            circle_marker_7fff907e8aaf41d183af8f189353c1f5.bindPopup(popup_5bb94d88f19c40e4ba7d114bf791b973)
+            ;
+
+            
+        
+    
+            var circle_marker_25914e984b494fdb9dee7d094dec951a = L.circleMarker(
+                [-19.3079509, -48.9265899],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3cb44b",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3cb44b",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_5c36bf0a7498497c81269f90f48aa9a5 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_1334a358b82c46d693d3237a2b7f12be = $(`<div id="html_1334a358b82c46d693d3237a2b7f12be" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>PRATA, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>1</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.3079509,-48.9265899</strong></h4></b><h4> <b>População :&nbsp<strong>28.173</strong></h4></b></div>`)[0];
+                popup_5c36bf0a7498497c81269f90f48aa9a5.setContent(html_1334a358b82c46d693d3237a2b7f12be);
+            
+
+            circle_marker_25914e984b494fdb9dee7d094dec951a.bindPopup(popup_5c36bf0a7498497c81269f90f48aa9a5)
+            ;
+
+            
+        
+    
+            var circle_marker_381ba76b818c4fd7bb22c1fff0c5b85b = L.circleMarker(
+                [-19.3079509, -48.9265899],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3cb44b",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3cb44b",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_415d9b775bbf434eb3d9a38c5f75225b = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_2dea6345ace34cad8991d3460dc996f6 = $(`<div id="html_2dea6345ace34cad8991d3460dc996f6" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>PRATA, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>1</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.3079509,-48.9265899</strong></h4></b><h4> <b>População :&nbsp<strong>28.173</strong></h4></b></div>`)[0];
+                popup_415d9b775bbf434eb3d9a38c5f75225b.setContent(html_2dea6345ace34cad8991d3460dc996f6);
+            
+
+            circle_marker_381ba76b818c4fd7bb22c1fff0c5b85b.bindPopup(popup_415d9b775bbf434eb3d9a38c5f75225b)
+            ;
+
+            
+        
+    
+            var circle_marker_53638260cf2048c1a24b828fc6aec1d3 = L.circleMarker(
+                [-19.6824436, -44.890204],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#f58231",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#f58231",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_b6bbe8c1247c4672b2adda59e79d26e8 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_bd04b5158a85407ebb0ea84eb3975a3e = $(`<div id="html_bd04b5158a85407ebb0ea84eb3975a3e" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>PITANGUI, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>24</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.6824436,-44.890204</strong></h4></b><h4> <b>População :&nbsp<strong>28.433</strong></h4></b></div>`)[0];
+                popup_b6bbe8c1247c4672b2adda59e79d26e8.setContent(html_bd04b5158a85407ebb0ea84eb3975a3e);
+            
+
+            circle_marker_53638260cf2048c1a24b828fc6aec1d3.bindPopup(popup_b6bbe8c1247c4672b2adda59e79d26e8)
+            ;
+
+            
+        
+    
+            var circle_marker_145b83430158472087be8e237d32b3d3 = L.circleMarker(
+                [-19.6824436, -44.890204],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#f58231",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#f58231",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_72083c53e72e47fb8c0a9c1ad4c05758 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_a6462e97cf75425d82aefceb95fc31dc = $(`<div id="html_a6462e97cf75425d82aefceb95fc31dc" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>PITANGUI, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>24</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.6824436,-44.890204</strong></h4></b><h4> <b>População :&nbsp<strong>28.433</strong></h4></b></div>`)[0];
+                popup_72083c53e72e47fb8c0a9c1ad4c05758.setContent(html_a6462e97cf75425d82aefceb95fc31dc);
+            
+
+            circle_marker_145b83430158472087be8e237d32b3d3.bindPopup(popup_72083c53e72e47fb8c0a9c1ad4c05758)
+            ;
+
+            
+        
+    
+            var circle_marker_160558adc4f544c0a16674dee357e36a = L.circleMarker(
+                [-19.9241693, -48.3811173],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#fabebe",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#fabebe",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_a430fea8011545ad8d270d58b59822b8 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_6e254d01413449149e385b2b3d18502d = $(`<div id="html_6e254d01413449149e385b2b3d18502d" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>CONCEICAO DAS ALAGOAS, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>9</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.9241693,-48.3811173</strong></h4></b><h4> <b>Distance :&nbsp<strong>75.0 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>68.3 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>28.782</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-20.0263494,-48.9362703&destination=-19.9241693,-48.3811173 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_a430fea8011545ad8d270d58b59822b8.setContent(html_6e254d01413449149e385b2b3d18502d);
+            
+
+            circle_marker_160558adc4f544c0a16674dee357e36a.bindPopup(popup_a430fea8011545ad8d270d58b59822b8)
+            ;
+
+            
+        
+    
+            var circle_marker_94025b20cf254317a53bf92d2d9b8aea = L.circleMarker(
+                [-21.2755425, -47.3013532],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#f032e6",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#f032e6",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_80edea04ab1042a78ea876f8fac24661 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_172c15e65910467195e40c624064fe4a = $(`<div id="html_172c15e65910467195e40c624064fe4a" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>CAJURU, SP ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>7</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-21.2755425,-47.3013532</strong></h4></b><h4> <b>População :&nbsp<strong>26.613</strong></h4></b></div>`)[0];
+                popup_80edea04ab1042a78ea876f8fac24661.setContent(html_172c15e65910467195e40c624064fe4a);
+            
+
+            circle_marker_94025b20cf254317a53bf92d2d9b8aea.bindPopup(popup_80edea04ab1042a78ea876f8fac24661)
+            ;
+
+            
+        
+    
+            var circle_marker_c80fff751f0f4669928f729e204d6d98 = L.circleMarker(
+                [-21.2755425, -47.3013532],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#f032e6",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#f032e6",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_5400f72668994965a7c3deacda4cbaa6 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_526b972328574eb3ac5f8a5a7371f763 = $(`<div id="html_526b972328574eb3ac5f8a5a7371f763" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>CAJURU, SP ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>7</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-21.2755425,-47.3013532</strong></h4></b><h4> <b>População :&nbsp<strong>26.613</strong></h4></b></div>`)[0];
+                popup_5400f72668994965a7c3deacda4cbaa6.setContent(html_526b972328574eb3ac5f8a5a7371f763);
+            
+
+            circle_marker_c80fff751f0f4669928f729e204d6d98.bindPopup(popup_5400f72668994965a7c3deacda4cbaa6)
+            ;
+
+            
+        
+    
+            var circle_marker_2cb984f77fc54bd3ac020601e5037a04 = L.circleMarker(
+                [-18.5943699, -48.7025321],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#aaffc3",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#aaffc3",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_a10ad63cfe114731b966876a090f6ff8 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_7cee7f0e58eb47a7a11c3bfa2725dad5 = $(`<div id="html_7cee7f0e58eb47a7a11c3bfa2725dad5" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>TUPACIGUARA, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>15</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-18.5943699,-48.7025321</strong></h4></b><h4> <b>Distance :&nbsp<strong>71.1 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>58.8 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>25.466</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-18.9127749,-48.2755227&destination=-18.5943699,-48.7025321 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_a10ad63cfe114731b966876a090f6ff8.setContent(html_7cee7f0e58eb47a7a11c3bfa2725dad5);
+            
+
+            circle_marker_2cb984f77fc54bd3ac020601e5037a04.bindPopup(popup_a10ad63cfe114731b966876a090f6ff8)
+            ;
+
+            
+        
+    
+            var circle_marker_78c21e3030434c3396c1b4fc327dd947 = L.circleMarker(
+                [-20.9883226, -47.658041],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#e6194b",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#e6194b",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_3cc1c9675dd3456b8139ef8e8b4639b1 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_2d311f8999cd4aefaa6ef9d03d534fe6 = $(`<div id="html_2d311f8999cd4aefaa6ef9d03d534fe6" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>BRODOWSKI, SP ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>20</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-20.9883226,-47.658041</strong></h4></b><h4> <b>Distance :&nbsp<strong>15.1 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>13.7 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>25.605</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-20.8861299,-47.5853958&destination=-20.9883226,-47.658041 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_3cc1c9675dd3456b8139ef8e8b4639b1.setContent(html_2d311f8999cd4aefaa6ef9d03d534fe6);
+            
+
+            circle_marker_78c21e3030434c3396c1b4fc327dd947.bindPopup(popup_3cc1c9675dd3456b8139ef8e8b4639b1)
+            ;
+
+            
+        
+    
+            var circle_marker_d044b02bc7da40f68917dc29bb90f533 = L.circleMarker(
+                [-20.1800039, -48.030995],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#f7820c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#f7820c",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_c1349ec9502b4219875912bce7731639 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_dfb08e8746f644acb85fe2357db990c4 = $(`<div id="html_dfb08e8746f644acb85fe2357db990c4" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>MIGUELOPOLIS, SP ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>17</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-20.1800039,-48.030995</strong></h4></b><h4> <b>Distance :&nbsp<strong>89.7 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>70.7 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>22.480</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-19.7460372,-47.9339936&destination=-20.1800039,-48.030995 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_c1349ec9502b4219875912bce7731639.setContent(html_dfb08e8746f644acb85fe2357db990c4);
+            
+
+            circle_marker_d044b02bc7da40f68917dc29bb90f533.bindPopup(popup_c1349ec9502b4219875912bce7731639)
+            ;
+
+            
+        
+    
+            var circle_marker_846b6348945e4382a9ba2dc90d0582d5 = L.circleMarker(
+                [-21.1899297, -46.9768603],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#f032e6",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#f032e6",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_ea66e2dc0a314385a0d6bba9ca6f465f = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_ae349fe9b8d8419facc219cb2e3663d5 = $(`<div id="html_ae349fe9b8d8419facc219cb2e3663d5" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>MONTE SANTO DE MINAS, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>7</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-21.1899297,-46.9768603</strong></h4></b><h4> <b>Distance :&nbsp<strong>45.9 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>65.1 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>21.504</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-21.2755425,-47.3013532&destination=-21.1899297,-46.9768603 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_ea66e2dc0a314385a0d6bba9ca6f465f.setContent(html_ae349fe9b8d8419facc219cb2e3663d5);
+            
+
+            circle_marker_846b6348945e4382a9ba2dc90d0582d5.bindPopup(popup_ea66e2dc0a314385a0d6bba9ca6f465f)
+            ;
+
+            
+        
+    
+            var circle_marker_c7e287509af44e579f8947419fa786a3 = L.circleMarker(
+                [-18.8705155, -48.8799751],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#aaffc3",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#aaffc3",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_91bc842054c04aef9d1a3e98a10ef0cb = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_269ab43d2ceb407f998d3833afaad1fe = $(`<div id="html_269ab43d2ceb407f998d3833afaad1fe" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>MONTE ALEGRE DE MINAS, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>15</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-18.8705155,-48.8799751</strong></h4></b><h4> <b>Distance :&nbsp<strong>69.1 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>47.3 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>21.349</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-18.9127749,-48.2755227&destination=-18.8705155,-48.8799751 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_91bc842054c04aef9d1a3e98a10ef0cb.setContent(html_269ab43d2ceb407f998d3833afaad1fe);
+            
+
+            circle_marker_c7e287509af44e579f8947419fa786a3.bindPopup(popup_91bc842054c04aef9d1a3e98a10ef0cb)
+            ;
+
+            
+        
+    
+            var circle_marker_2bfc1b515f494e808d4e5b065f1d00ba = L.circleMarker(
+                [-20.4281678, -47.8266067],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#800000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#800000",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_15259090a7154cccab9140bb08badb43 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_81044d78a64f492a82c134f7191b66c4 = $(`<div id="html_81044d78a64f492a82c134f7191b66c4" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>GUARA, SP ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>14</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-20.4281678,-47.8266067</strong></h4></b><h4> <b>Distance :&nbsp<strong>13.8 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>12.6 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>21.394</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-20.3358968,-47.7909635&destination=-20.4281678,-47.8266067 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_15259090a7154cccab9140bb08badb43.setContent(html_81044d78a64f492a82c134f7191b66c4);
+            
+
+            circle_marker_2bfc1b515f494e808d4e5b065f1d00ba.bindPopup(popup_15259090a7154cccab9140bb08badb43)
+            ;
+
+            
+        
+    
+            var circle_marker_9946bf9cc377424e871b0d3f09e0bf1d = L.circleMarker(
+                [-17.9873275, -46.9041459],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#f7e531",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#f7e531",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_3a4cb856de85423789dc63f4c080df58 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_1e57a7fde6d5461d8c031d33fed8a37b = $(`<div id="html_1e57a7fde6d5461d8c031d33fed8a37b" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>VAZANTE, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>13</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-17.9873275,-46.9041459</strong></h4></b><h4> <b>População :&nbsp<strong>20.692</strong></h4></b></div>`)[0];
+                popup_3a4cb856de85423789dc63f4c080df58.setContent(html_1e57a7fde6d5461d8c031d33fed8a37b);
+            
+
+            circle_marker_9946bf9cc377424e871b0d3f09e0bf1d.bindPopup(popup_3a4cb856de85423789dc63f4c080df58)
+            ;
+
+            
+        
+    
+            var circle_marker_910c9b69b99a490e9518655ff4131a3b = L.circleMarker(
+                [-17.9873275, -46.9041459],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#f7e531",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#f7e531",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_07f104c1231a45f59f5c297457fb72d6 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_d4073f098f04465b9d620a3fe5a6448e = $(`<div id="html_d4073f098f04465b9d620a3fe5a6448e" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>VAZANTE, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>13</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-17.9873275,-46.9041459</strong></h4></b><h4> <b>População :&nbsp<strong>20.692</strong></h4></b></div>`)[0];
+                popup_07f104c1231a45f59f5c297457fb72d6.setContent(html_d4073f098f04465b9d620a3fe5a6448e);
+            
+
+            circle_marker_910c9b69b99a490e9518655ff4131a3b.bindPopup(popup_07f104c1231a45f59f5c297457fb72d6)
+            ;
+
+            
+        
+    
+            var circle_marker_95487c05bec2459681fa9877e4314f01 = L.circleMarker(
+                [-19.5340345, -49.4807685],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#9a6324",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#9a6324",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_938e17a60e7d42d2aefe0c59efd48aea = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_23efda2916f84e58a1b16b13da2903ca = $(`<div id="html_23efda2916f84e58a1b16b13da2903ca" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>CAMPINA VERDE, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>12</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.5340345,-49.4807685</strong></h4></b><h4> <b>População :&nbsp<strong>19.759</strong></h4></b></div>`)[0];
+                popup_938e17a60e7d42d2aefe0c59efd48aea.setContent(html_23efda2916f84e58a1b16b13da2903ca);
+            
+
+            circle_marker_95487c05bec2459681fa9877e4314f01.bindPopup(popup_938e17a60e7d42d2aefe0c59efd48aea)
+            ;
+
+            
+        
+    
+            var circle_marker_69e9237932664d568f3e67de41d59d2e = L.circleMarker(
+                [-19.5340345, -49.4807685],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#9a6324",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#9a6324",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_f11428b00bd4474f980cec72e560ffad = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_356a0b40e6f242bc8a3fae2c7274a86f = $(`<div id="html_356a0b40e6f242bc8a3fae2c7274a86f" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>CAMPINA VERDE, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>12</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.5340345,-49.4807685</strong></h4></b><h4> <b>População :&nbsp<strong>19.759</strong></h4></b></div>`)[0];
+                popup_f11428b00bd4474f980cec72e560ffad.setContent(html_356a0b40e6f242bc8a3fae2c7274a86f);
+            
+
+            circle_marker_69e9237932664d568f3e67de41d59d2e.bindPopup(popup_f11428b00bd4474f980cec72e560ffad)
+            ;
+
+            
+        
+    
+            var circle_marker_762cee6e323648c3a3d3f07211a55228 = L.circleMarker(
+                [-18.9965233, -50.5480764],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#808000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#808000",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_b58c6ec1aaca499e93406fc3ea0224a3 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_3a5e944f92c0458291fdf19b247f7dda = $(`<div id="html_3a5e944f92c0458291fdf19b247f7dda" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>SAO SIMAO, GO ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>16</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-18.9965233,-50.5480764</strong></h4></b><h4> <b>População :&nbsp<strong>21.318</strong></h4></b></div>`)[0];
+                popup_b58c6ec1aaca499e93406fc3ea0224a3.setContent(html_3a5e944f92c0458291fdf19b247f7dda);
+            
+
+            circle_marker_762cee6e323648c3a3d3f07211a55228.bindPopup(popup_b58c6ec1aaca499e93406fc3ea0224a3)
+            ;
+
+            
+        
+    
+            var circle_marker_c48e82d9282b4d568029988835e675bf = L.circleMarker(
+                [-18.9965233, -50.5480764],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#808000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#808000",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_02047e4f6f9446eeaea25b387d12c2d2 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_632f18b30a4e4329a3114310b2eb63d4 = $(`<div id="html_632f18b30a4e4329a3114310b2eb63d4" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>SAO SIMAO, GO ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>16</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-18.9965233,-50.5480764</strong></h4></b><h4> <b>População :&nbsp<strong>21.318</strong></h4></b></div>`)[0];
+                popup_02047e4f6f9446eeaea25b387d12c2d2.setContent(html_632f18b30a4e4329a3114310b2eb63d4);
+            
+
+            circle_marker_c48e82d9282b4d568029988835e675bf.bindPopup(popup_02047e4f6f9446eeaea25b387d12c2d2)
+            ;
+
+            
+        
+    
+            var circle_marker_82ee7714455f4828ae8d625289521780 = L.circleMarker(
+                [-18.8472545, -50.1239346],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#f58231",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#f58231",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_c61823c492914e76bd58acdfa1099046 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_9ad6f127e88640a689f46d74c59c3812 = $(`<div id="html_9ad6f127e88640a689f46d74c59c3812" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>SANTA VITORIA, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>4</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-18.8472545,-50.1239346</strong></h4></b><h4> <b>População :&nbsp<strong>19.997</strong></h4></b></div>`)[0];
+                popup_c61823c492914e76bd58acdfa1099046.setContent(html_9ad6f127e88640a689f46d74c59c3812);
+            
+
+            circle_marker_82ee7714455f4828ae8d625289521780.bindPopup(popup_c61823c492914e76bd58acdfa1099046)
+            ;
+
+            
+        
+    
+            var circle_marker_4cb4fd0e373a488da47aa5e5153ae15c = L.circleMarker(
+                [-18.8472545, -50.1239346],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#f58231",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#f58231",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_e43a555ede7148a49e153ffe066001d0 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_e633b45025c84bde981bb8e2cf993a5e = $(`<div id="html_e633b45025c84bde981bb8e2cf993a5e" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>SANTA VITORIA, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>4</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-18.8472545,-50.1239346</strong></h4></b><h4> <b>População :&nbsp<strong>19.997</strong></h4></b></div>`)[0];
+                popup_e43a555ede7148a49e153ffe066001d0.setContent(html_e633b45025c84bde981bb8e2cf993a5e);
+            
+
+            circle_marker_4cb4fd0e373a488da47aa5e5153ae15c.bindPopup(popup_e43a555ede7148a49e153ffe066001d0)
+            ;
+
+            
+        
+    
+            var circle_marker_818b5b7372a34debb3d80926cee49223 = L.circleMarker(
+                [-18.4158495, -46.4186194],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#e6194b",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#e6194b",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_7dbb3872bd864149af35a1ee737ea5c9 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_851fb15474224ae8b1283cd884ae7431 = $(`<div id="html_851fb15474224ae8b1283cd884ae7431" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>PRESIDENTE OLEGARIO, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>0</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-18.4158495,-46.4186194</strong></h4></b><h4> <b>Distance :&nbsp<strong>30.2 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>33.1 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>19.680</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-18.5961683,-46.5150076&destination=-18.4158495,-46.4186194 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_7dbb3872bd864149af35a1ee737ea5c9.setContent(html_851fb15474224ae8b1283cd884ae7431);
+            
+
+            circle_marker_818b5b7372a34debb3d80926cee49223.bindPopup(popup_7dbb3872bd864149af35a1ee737ea5c9)
+            ;
+
+            
+        
+    
+            var circle_marker_95f5916ac369499da2d5168dd507918e = L.circleMarker(
+                [-19.790283, -45.6820678],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#808080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#808080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_40783a8b2d8d46c5b4c95538b8db8420 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_5b3b5d2abe2b46f7b49f8b564b5e1dde = $(`<div id="html_5b3b5d2abe2b46f7b49f8b564b5e1dde" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>LUZ, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>19</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.790283,-45.6820678</strong></h4></b><h4> <b>População :&nbsp<strong>18.297</strong></h4></b></div>`)[0];
+                popup_40783a8b2d8d46c5b4c95538b8db8420.setContent(html_5b3b5d2abe2b46f7b49f8b564b5e1dde);
+            
+
+            circle_marker_95f5916ac369499da2d5168dd507918e.bindPopup(popup_40783a8b2d8d46c5b4c95538b8db8420)
+            ;
+
+            
+        
+    
+            var circle_marker_3e3f6ca225d24b999af4727d67267d98 = L.circleMarker(
+                [-19.790283, -45.6820678],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#808080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#808080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_cb41ba34fb074b4f9dddfec698c30c01 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_85f3ad873aa649de8104b0e2dd913be9 = $(`<div id="html_85f3ad873aa649de8104b0e2dd913be9" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>LUZ, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>19</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.790283,-45.6820678</strong></h4></b><h4> <b>População :&nbsp<strong>18.297</strong></h4></b></div>`)[0];
+                popup_cb41ba34fb074b4f9dddfec698c30c01.setContent(html_85f3ad873aa649de8104b0e2dd913be9);
+            
+
+            circle_marker_3e3f6ca225d24b999af4727d67267d98.bindPopup(popup_cb41ba34fb074b4f9dddfec698c30c01)
+            ;
+
+            
+        
+    
+            var circle_marker_627804561f6644adb86470dcf13d9741 = L.circleMarker(
+                [-18.7776633, -46.405353],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#e6194b",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#e6194b",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_fb986a711d584464adf7c7d74ee9164b = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_8934df8a655c411b981cf731d263e565 = $(`<div id="html_8934df8a655c411b981cf731d263e565" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>LAGOA FORMOSA, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>0</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-18.7776633,-46.405353</strong></h4></b><h4> <b>Distance :&nbsp<strong>25.4 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>26.5 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>18.168</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-18.5961683,-46.5150076&destination=-18.7776633,-46.405353 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_fb986a711d584464adf7c7d74ee9164b.setContent(html_8934df8a655c411b981cf731d263e565);
+            
+
+            circle_marker_627804561f6644adb86470dcf13d9741.bindPopup(popup_fb986a711d584464adf7c7d74ee9164b)
+            ;
+
+            
+        
+    
+            var circle_marker_03159f8644a0480fb7b76f8c33bcf4da = L.circleMarker(
+                [-18.6828377, -49.5706567],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#bcf60c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#bcf60c",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_b258540f3e4c4e8d8dc237c6dca5c6ce = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_0252c4368beb4d1397f5689fa01d5db2 = $(`<div id="html_0252c4368beb4d1397f5689fa01d5db2" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>CAPINOPOLIS, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>8</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-18.6828377,-49.5706567</strong></h4></b><h4> <b>Distance :&nbsp<strong>38.2 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>38.6 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>16.294</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-18.9745738,-49.4600885&destination=-18.6828377,-49.5706567 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_b258540f3e4c4e8d8dc237c6dca5c6ce.setContent(html_0252c4368beb4d1397f5689fa01d5db2);
+            
+
+            circle_marker_03159f8644a0480fb7b76f8c33bcf4da.bindPopup(popup_b258540f3e4c4e8d8dc237c6dca5c6ce)
+            ;
+
+            
+        
+    
+            var circle_marker_b981bda9169d48588907259f6e866cae = L.circleMarker(
+                [-21.0228295, -47.3742097],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#e6194b",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#e6194b",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_e04839b871a64932935f8909a40a2bbe = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_1eb1eddb156840febfff19393ec86b74 = $(`<div id="html_1eb1eddb156840febfff19393ec86b74" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>ALTINOPOLIS, SP ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>20</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-21.0228295,-47.3742097</strong></h4></b><h4> <b>Distance :&nbsp<strong>33.1 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>24.8 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>16.221</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-20.8861299,-47.5853958&destination=-21.0228295,-47.3742097 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_e04839b871a64932935f8909a40a2bbe.setContent(html_1eb1eddb156840febfff19393ec86b74);
+            
+
+            circle_marker_b981bda9169d48588907259f6e866cae.bindPopup(popup_e04839b871a64932935f8909a40a2bbe)
+            ;
+
+            
+        
+    
+            var circle_marker_0840a10a04df417992dd3f1fe30ca67e = L.circleMarker(
+                [-20.4403475, -48.0150991],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffe119",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffe119",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_477152052b084f07aa24c74281d79241 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_7b29ad6002dd4e96832040ce629deb97 = $(`<div id="html_7b29ad6002dd4e96832040ce629deb97" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>IPUA, SP ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>2</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-20.4403475,-48.0150991</strong></h4></b><h4> <b>Distance :&nbsp<strong>33.4 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>28.5 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>16.794</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-20.5850618,-47.8645776&destination=-20.4403475,-48.0150991 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_477152052b084f07aa24c74281d79241.setContent(html_7b29ad6002dd4e96832040ce629deb97);
+            
+
+            circle_marker_0840a10a04df417992dd3f1fe30ca67e.bindPopup(popup_477152052b084f07aa24c74281d79241)
+            ;
+
+            
+        
+    
+            var circle_marker_2f9e9ac7057c44bd819dda1a33924c38 = L.circleMarker(
+                [-19.4494354, -44.7481772],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#f58231",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#f58231",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_d6bac41737934b54b82dc1e5812d9561 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_c5caf93f158442ec925c96993693f726 = $(`<div id="html_c5caf93f158442ec925c96993693f726" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>PAPAGAIOS, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>24</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.4494354,-44.7481772</strong></h4></b><h4> <b>Distance :&nbsp<strong>40.6 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>63.7 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>15.922</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-19.6824436,-44.890204&destination=-19.4494354,-44.7481772 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_d6bac41737934b54b82dc1e5812d9561.setContent(html_c5caf93f158442ec925c96993693f726);
+            
+
+            circle_marker_2f9e9ac7057c44bd819dda1a33924c38.bindPopup(popup_d6bac41737934b54b82dc1e5812d9561)
+            ;
+
+            
+        
+    
+            var circle_marker_fb0f5653e13c40e9ac21e2576af04a9a = L.circleMarker(
+                [-19.6968881, -46.1704974],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_ae29b7980ca04f6491241b44b9a42603 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_11158f9471ef4baf99fe1500be91feb1 = $(`<div id="html_11158f9471ef4baf99fe1500be91feb1" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>CAMPOS ALTOS, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>10</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.6968881,-46.1704974</strong></h4></b><h4> <b>População :&nbsp<strong>15.661</strong></h4></b></div>`)[0];
+                popup_ae29b7980ca04f6491241b44b9a42603.setContent(html_11158f9471ef4baf99fe1500be91feb1);
+            
+
+            circle_marker_fb0f5653e13c40e9ac21e2576af04a9a.bindPopup(popup_ae29b7980ca04f6491241b44b9a42603)
+            ;
+
+            
+        
+    
+            var circle_marker_72f9451181b04c629dc33295ebbee105 = L.circleMarker(
+                [-19.6968881, -46.1704974],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_d41914bf4efc4ae485f1b82672731566 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_3ffa0bdfbd884c09be1cd63f91527560 = $(`<div id="html_3ffa0bdfbd884c09be1cd63f91527560" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>CAMPOS ALTOS, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>10</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.6968881,-46.1704974</strong></h4></b><h4> <b>População :&nbsp<strong>15.661</strong></h4></b></div>`)[0];
+                popup_d41914bf4efc4ae485f1b82672731566.setContent(html_3ffa0bdfbd884c09be1cd63f91527560);
+            
+
+            circle_marker_72f9451181b04c629dc33295ebbee105.bindPopup(popup_d41914bf4efc4ae485f1b82672731566)
+            ;
+
+            
+        
+    
+            var circle_marker_ae907ae5adc14f639b6280244f44f6f5 = L.circleMarker(
+                [-19.9018142, -49.3701088],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#9a6324",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#9a6324",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_678798bb66734e2687be47a4297d0328 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_53c4136bfbb84e0caca3bf163ac4b009 = $(`<div id="html_53c4136bfbb84e0caca3bf163ac4b009" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>ITAPAGIPE, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>12</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.9018142,-49.3701088</strong></h4></b><h4> <b>Distance :&nbsp<strong>57.5 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>79.0 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>15.511</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-19.5340345,-49.4807685&destination=-19.9018142,-49.3701088 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_678798bb66734e2687be47a4297d0328.setContent(html_53c4136bfbb84e0caca3bf163ac4b009);
+            
+
+            circle_marker_ae907ae5adc14f639b6280244f44f6f5.bindPopup(popup_678798bb66734e2687be47a4297d0328)
+            ;
+
+            
+        
+    
+            var circle_marker_c6d0675f4fb040f7bc67487b5970a8d8 = L.circleMarker(
+                [-19.1465807, -47.6783667],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#46f0f0",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#46f0f0",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_c6b542a127474b9198d5a41ae1ec0f82 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_4dc4f37ce95840a89e2ad02616179614 = $(`<div id="html_4dc4f37ce95840a89e2ad02616179614" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>NOVA PONTE, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>6</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.1465807,-47.6783667</strong></h4></b><h4> <b>População :&nbsp<strong>16.046</strong></h4></b></div>`)[0];
+                popup_c6b542a127474b9198d5a41ae1ec0f82.setContent(html_4dc4f37ce95840a89e2ad02616179614);
+            
+
+            circle_marker_c6d0675f4fb040f7bc67487b5970a8d8.bindPopup(popup_c6b542a127474b9198d5a41ae1ec0f82)
+            ;
+
+            
+        
+    
+            var circle_marker_236fe672a6224b80895ad04da9a5915d = L.circleMarker(
+                [-19.1465807, -47.6783667],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#46f0f0",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#46f0f0",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_cd0fe28bd20f43af8060c6ab0239e540 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_bdb506038c1f46fca2c72ddfcbc7c0c6 = $(`<div id="html_bdb506038c1f46fca2c72ddfcbc7c0c6" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>NOVA PONTE, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>6</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.1465807,-47.6783667</strong></h4></b><h4> <b>População :&nbsp<strong>16.046</strong></h4></b></div>`)[0];
+                popup_cd0fe28bd20f43af8060c6ab0239e540.setContent(html_bdb506038c1f46fca2c72ddfcbc7c0c6);
+            
+
+            circle_marker_236fe672a6224b80895ad04da9a5915d.bindPopup(popup_cd0fe28bd20f43af8060c6ab0239e540)
+            ;
+
+            
+        
+    
+            var circle_marker_18bc48ee2cfe4878a36b7e33fad6e595 = L.circleMarker(
+                [-20.4656703, -47.125941],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#4363d8",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#4363d8",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_d9d448e278974c8680b7732b9bd93ee4 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_70e581ed6f9c4d99be64cac097f39648 = $(`<div id="html_70e581ed6f9c4d99be64cac097f39648" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>IBIRACI, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>23</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-20.4656703,-47.125941</strong></h4></b><h4> <b>Distance :&nbsp<strong>39.9 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>46.2 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>14.128</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-20.5394551,-47.4010979&destination=-20.4656703,-47.125941 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_d9d448e278974c8680b7732b9bd93ee4.setContent(html_70e581ed6f9c4d99be64cac097f39648);
+            
+
+            circle_marker_18bc48ee2cfe4878a36b7e33fad6e595.bindPopup(popup_d9d448e278974c8680b7732b9bd93ee4)
+            ;
+
+            
+        
+    
+            var circle_marker_f7f4b63fafc84e46a870f309c239be83 = L.circleMarker(
+                [-19.3126459, -47.5269907],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#46f0f0",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#46f0f0",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_3b99862c85324f3e9698cf6b5ce352b5 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_231da2e1dfb6467396dd4851863cb4e3 = $(`<div id="html_231da2e1dfb6467396dd4851863cb4e3" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>SANTA JULIANA, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>6</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.3126459,-47.5269907</strong></h4></b><h4> <b>Distance :&nbsp<strong>38.7 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>37.8 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>14.497</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-19.1465807,-47.6783667&destination=-19.3126459,-47.5269907 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_3b99862c85324f3e9698cf6b5ce352b5.setContent(html_231da2e1dfb6467396dd4851863cb4e3);
+            
+
+            circle_marker_f7f4b63fafc84e46a870f309c239be83.bindPopup(popup_3b99862c85324f3e9698cf6b5ce352b5)
+            ;
+
+            
+        
+    
+            var circle_marker_aada3897fb644efb977ac380e329419a = L.circleMarker(
+                [-19.1980409, -46.2368621],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffe119",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffe119",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_260dfea69ead4fb3b700d4bdaff56fe0 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_4acfe358caa74d94abc4b6e00bab2a1b = $(`<div id="html_4acfe358caa74d94abc4b6e00bab2a1b" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>RIO PARANAIBA, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>22</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.1980409,-46.2368621</strong></h4></b><h4> <b>Distance :&nbsp<strong>48.4 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>51.1 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>12.356</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-18.9997131,-46.3126967&destination=-19.1980409,-46.2368621 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_260dfea69ead4fb3b700d4bdaff56fe0.setContent(html_4acfe358caa74d94abc4b6e00bab2a1b);
+            
+
+            circle_marker_aada3897fb644efb977ac380e329419a.bindPopup(popup_260dfea69ead4fb3b700d4bdaff56fe0)
+            ;
+
+            
+        
+    
+            var circle_marker_20849b9a69354af39d80a402d33ff03a = L.circleMarker(
+                [-18.7216992, -49.20401],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#bcf60c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#bcf60c",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_176e30f88cfe46eeb3e508c26e65d9db = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_d2bf45d98426495881a914af8df49c87 = $(`<div id="html_d2bf45d98426495881a914af8df49c87" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>CANAPOLIS, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>8</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-18.7216992,-49.20401</strong></h4></b><h4> <b>Distance :&nbsp<strong>50.5 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>70.3 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>12.251</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-18.9745738,-49.4600885&destination=-18.7216992,-49.20401 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_176e30f88cfe46eeb3e508c26e65d9db.setContent(html_d2bf45d98426495881a914af8df49c87);
+            
+
+            circle_marker_20849b9a69354af39d80a402d33ff03a.bindPopup(popup_176e30f88cfe46eeb3e508c26e65d9db)
+            ;
+
+            
+        
+    
+            var circle_marker_a35aa7a84c584305be0c8cef3de3a86f = L.circleMarker(
+                [-20.1399952, -48.701023],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#fabebe",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#fabebe",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_bc3ddc2907e24ee6902310bbe53bdcc2 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_673647fae6274d028196fbab00523c0c = $(`<div id="html_673647fae6274d028196fbab00523c0c" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>PLANURA, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>9</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-20.1399952,-48.701023</strong></h4></b><h4> <b>Distance :&nbsp<strong>29.8 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>23.8 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>12.445</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-20.0263494,-48.9362703&destination=-20.1399952,-48.701023 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_bc3ddc2907e24ee6902310bbe53bdcc2.setContent(html_673647fae6274d028196fbab00523c0c);
+            
+
+            circle_marker_a35aa7a84c584305be0c8cef3de3a86f.bindPopup(popup_bc3ddc2907e24ee6902310bbe53bdcc2)
+            ;
+
+            
+        
+    
+            var circle_marker_b75d5152b1b241939a36dfbeed451ad9 = L.circleMarker(
+                [-20.7700909, -47.8405251],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffe119",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffe119",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_a232caa36e884d89b4bbfa94bbf47794 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_c4fabf2d4d4647178ca6240b66bfccf3 = $(`<div id="html_c4fabf2d4d4647178ca6240b66bfccf3" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>SALES OLIVEIRA, SP ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>2</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-20.7700909,-47.8405251</strong></h4></b><h4> <b>Distance :&nbsp<strong>29.0 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>22.8 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>12.103</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-20.5850618,-47.8645776&destination=-20.7700909,-47.8405251 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_a232caa36e884d89b4bbfa94bbf47794.setContent(html_c4fabf2d4d4647178ca6240b66bfccf3);
+            
+
+            circle_marker_b75d5152b1b241939a36dfbeed451ad9.bindPopup(popup_a232caa36e884d89b4bbfa94bbf47794)
+            ;
+
+            
+        
+    
+            var circle_marker_739e38205c17486da81fce1002c2bebc = L.circleMarker(
+                [-19.9526866, -45.0813485],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#4363d8",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#4363d8",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_543e860449dd43e0ac293a2faef826b7 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_77dec70c29e34b38bc8430191b2da620 = $(`<div id="html_77dec70c29e34b38bc8430191b2da620" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>PERDIGAO, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>3</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.9526866,-45.0813485</strong></h4></b><h4> <b>Distance :&nbsp<strong>15.8 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>17.7 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>11.994</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-19.8777714,-44.9856483&destination=-19.9526866,-45.0813485 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_543e860449dd43e0ac293a2faef826b7.setContent(html_77dec70c29e34b38bc8430191b2da620);
+            
+
+            circle_marker_739e38205c17486da81fce1002c2bebc.bindPopup(popup_543e860449dd43e0ac293a2faef826b7)
+            ;
+
+            
+        
+    
+            var circle_marker_69b9df7251c24950b5b1a01904cc64f3 = L.circleMarker(
+                [-19.9517981, -44.7085918],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#e6beff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#e6beff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_9b8b2d9c19e4469eb1b6a3573d22a641 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_15b9ee9d51444f04ab0ea576b9bb9d82 = $(`<div id="html_15b9ee9d51444f04ab0ea576b9bb9d82" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>IGARATINGA, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>11</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.9517981,-44.7085918</strong></h4></b><h4> <b>Distance :&nbsp<strong>22.2 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>18.7 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>11.146</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-19.8590162,-44.61021&destination=-19.9517981,-44.7085918 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_9b8b2d9c19e4469eb1b6a3573d22a641.setContent(html_15b9ee9d51444f04ab0ea576b9bb9d82);
+            
+
+            circle_marker_69b9df7251c24950b5b1a01904cc64f3.bindPopup(popup_9b8b2d9c19e4469eb1b6a3573d22a641)
+            ;
+
+            
+        
+    
+            var circle_marker_7afffb926afe472e8f198f222d97bbfe = L.circleMarker(
+                [-18.5896484, -49.1970562],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3cb44b",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3cb44b",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_2bece09fe2474f2dbe7a739c9d367365 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_998f6fcac79b4c78aecdc9dd6aade473 = $(`<div id="html_998f6fcac79b4c78aecdc9dd6aade473" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>CENTRALINA, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>21</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-18.5896484,-49.1970562</strong></h4></b><h4> <b>Distance :&nbsp<strong>23.6 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>17.8 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>10.343</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-18.4166854,-49.2170785&destination=-18.5896484,-49.1970562 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_2bece09fe2474f2dbe7a739c9d367365.setContent(html_998f6fcac79b4c78aecdc9dd6aade473);
+            
+
+            circle_marker_7afffb926afe472e8f198f222d97bbfe.bindPopup(popup_2bece09fe2474f2dbe7a739c9d367365)
+            ;
+
+            
+        
+    
+            var circle_marker_f30df17f42fe416da48a340404bef96a = L.circleMarker(
+                [-19.6976981, -50.685689],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#911eb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#911eb4",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_596af307d7ec4caf8dc9985a27d642ad = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_2f2f1d6e238d44e2b504dd2b0947f398 = $(`<div id="html_2f2f1d6e238d44e2b504dd2b0947f398" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>CARNEIRINHO, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>5</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.6976981,-50.685689</strong></h4></b><h4> <b>Distance :&nbsp<strong>54.9 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>40.0 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>10.103</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-19.7270345,-50.1938389&destination=-19.6976981,-50.685689 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_596af307d7ec4caf8dc9985a27d642ad.setContent(html_2f2f1d6e238d44e2b504dd2b0947f398);
+            
+
+            circle_marker_f30df17f42fe416da48a340404bef96a.bindPopup(popup_596af307d7ec4caf8dc9985a27d642ad)
+            ;
+
+            
+        
+    
+            var circle_marker_3fc1a1a4eb3b4b52a87e9306f6130ee0 = L.circleMarker(
+                [-19.9720253, -47.7758412],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#f7820c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#f7820c",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_1e45f0016eb343a08531fad291c262eb = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_fe50586185134389bb398dbd01a9b545 = $(`<div id="html_fe50586185134389bb398dbd01a9b545" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>DELTA, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>17</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.9720253,-47.7758412</strong></h4></b><h4> <b>Distance :&nbsp<strong>33.7 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>29.5 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>10.994</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-19.7460372,-47.9339936&destination=-19.9720253,-47.7758412 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_1e45f0016eb343a08531fad291c262eb.setContent(html_fe50586185134389bb398dbd01a9b545);
+            
+
+            circle_marker_3fc1a1a4eb3b4b52a87e9306f6130ee0.bindPopup(popup_1e45f0016eb343a08531fad291c262eb)
+            ;
+
+            
+        
+    
+            var circle_marker_2211af4ffeb749f3a4994661cac20ed0 = L.circleMarker(
+                [-18.9125355, -50.6547789],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#808000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#808000",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_69c0516838b04d39a33cb3354bf5bb53 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_11f9897585f44d94a9e03839298a0071 = $(`<div id="html_11f9897585f44d94a9e03839298a0071" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>PARANAIGUARA, GO ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>16</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-18.9125355,-50.6547789</strong></h4></b><h4> <b>Distance :&nbsp<strong>16.2 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>17.5 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>10.221</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-18.9965233,-50.5480764&destination=-18.9125355,-50.6547789 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_69c0516838b04d39a33cb3354bf5bb53.setContent(html_11f9897585f44d94a9e03839298a0071);
+            
+
+            circle_marker_2211af4ffeb749f3a4994661cac20ed0.bindPopup(popup_69c0516838b04d39a33cb3354bf5bb53)
+            ;
+
+            
+        
+    
+            var circle_marker_c758141870c14c389a8a8fcf71d1da74 = L.circleMarker(
+                [-18.1386613, -49.0422151],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3cb44b",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3cb44b",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_60aa14ce75ab4b3cb78f84ad0aba098f = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_1b8e4f8e527a4ddb95b180a6abd1b94d = $(`<div id="html_1b8e4f8e527a4ddb95b180a6abd1b94d" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>BURITI ALEGRE, GO ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>21</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-18.1386613,-49.0422151</strong></h4></b><h4> <b>Distance :&nbsp<strong>40.7 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>40.0 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>9.515</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-18.4166854,-49.2170785&destination=-18.1386613,-49.0422151 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_60aa14ce75ab4b3cb78f84ad0aba098f.setContent(html_1b8e4f8e527a4ddb95b180a6abd1b94d);
+            
+
+            circle_marker_c758141870c14c389a8a8fcf71d1da74.bindPopup(popup_60aa14ce75ab4b3cb78f84ad0aba098f)
+            ;
+
+            
+        
+    
+            var circle_marker_925f9608af52405d983d199296247869 = L.circleMarker(
+                [-17.836825, -46.5212209],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#f7e531",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#f7e531",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_f101fe33ebf246ba9f4fc272f153ee42 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_41de01e5927b458181517df993d91ebe = $(`<div id="html_41de01e5927b458181517df993d91ebe" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>LAGOA GRANDE, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>13</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-17.836825,-46.5212209</strong></h4></b><h4> <b>Distance :&nbsp<strong>120.7 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>123.8 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>9.681</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-17.9873275,-46.9041459&destination=-17.836825,-46.5212209 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_f101fe33ebf246ba9f4fc272f153ee42.setContent(html_41de01e5927b458181517df993d91ebe);
+            
+
+            circle_marker_925f9608af52405d983d199296247869.bindPopup(popup_f101fe33ebf246ba9f4fc272f153ee42)
+            ;
+
+            
+        
+    
+            var circle_marker_cca65fbdc03d4fb7a35f4b9363539b53 = L.circleMarker(
+                [-19.9475164, -45.1661304],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#4363d8",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#4363d8",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_869d00e85c744429a65d1d1e9812c936 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_427e272465c54304bd50512f73ce690b = $(`<div id="html_427e272465c54304bd50512f73ce690b" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>ARAUJOS, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>3</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.9475164,-45.1661304</strong></h4></b><h4> <b>Distance :&nbsp<strong>26.2 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>29.1 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>9.523</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-19.8777714,-44.9856483&destination=-19.9475164,-45.1661304 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_869d00e85c744429a65d1d1e9812c936.setContent(html_427e272465c54304bd50512f73ce690b);
+            
+
+            circle_marker_cca65fbdc03d4fb7a35f4b9363539b53.bindPopup(popup_869d00e85c744429a65d1d1e9812c936)
+            ;
+
+            
+        
+    
+            var circle_marker_3c39d0f410104c3cb7468c7c1251831f = L.circleMarker(
+                [-18.4953429, -49.4738469],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#bcf60c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#bcf60c",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_4e73fa1eaa804cae96532554c3250254 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_45479a4e5933402a9b2e3a0b996f4315 = $(`<div id="html_45479a4e5933402a9b2e3a0b996f4315" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>CACHOEIRA DOURADA, GO ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>8</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-18.4953429,-49.4738469</strong></h4></b><h4> <b>Distance :&nbsp<strong>68.4 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>73.9 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>7.997</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-18.9745738,-49.4600885&destination=-18.4953429,-49.4738469 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_4e73fa1eaa804cae96532554c3250254.setContent(html_45479a4e5933402a9b2e3a0b996f4315);
+            
+
+            circle_marker_3c39d0f410104c3cb7468c7c1251831f.bindPopup(popup_4e73fa1eaa804cae96532554c3250254)
+            ;
+
+            
+        
+    
+            var circle_marker_00dc8a618d774bb2a24f03c05058f067 = L.circleMarker(
+                [-20.1773927, -45.708185],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#808080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#808080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_13b9451ee6244cc4a1785b21ed4e02f1 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_601b852bc4134b75a0fea9e1aea7bdcc = $(`<div id="html_601b852bc4134b75a0fea9e1aea7bdcc" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>IGUATAMA, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>19</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-20.1773927,-45.708185</strong></h4></b><h4> <b>Distance :&nbsp<strong>54.2 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>83.0 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>7.901</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-19.790283,-45.6820678&destination=-20.1773927,-45.708185 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_13b9451ee6244cc4a1785b21ed4e02f1.setContent(html_601b852bc4134b75a0fea9e1aea7bdcc);
+            
+
+            circle_marker_00dc8a618d774bb2a24f03c05058f067.bindPopup(popup_13b9451ee6244cc4a1785b21ed4e02f1)
+            ;
+
+            
+        
+    
+            var circle_marker_ca69db19e9494b7c856ce88c10e1fcc2 = L.circleMarker(
+                [-19.762486, -48.5714802],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#fabebe",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#fabebe",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_3f17c352a51d49d6be528cae60f3ad02 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_acb5518cf34e485b9fda5dd9e3865ffb = $(`<div id="html_acb5518cf34e485b9fda5dd9e3865ffb" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>CAMPO FLORIDO, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>9</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.762486,-48.5714802</strong></h4></b><h4> <b>Distance :&nbsp<strong>59.6 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>61.1 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>8.383</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-20.0263494,-48.9362703&destination=-19.762486,-48.5714802 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_3f17c352a51d49d6be528cae60f3ad02.setContent(html_acb5518cf34e485b9fda5dd9e3865ffb);
+            
+
+            circle_marker_ca69db19e9494b7c856ce88c10e1fcc2.bindPopup(popup_3f17c352a51d49d6be528cae60f3ad02)
+            ;
+
+            
+        
+    
+            var circle_marker_5585584c682241e7a4e684255549b192 = L.circleMarker(
+                [-19.5127283, -44.676539],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#f58231",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#f58231",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_10d0a83c532a4bc3b477f6885040a827 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_f0641859dae9488589952517ff140d4c = $(`<div id="html_f0641859dae9488589952517ff140d4c" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>MARAVILHAS, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>24</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.5127283,-44.676539</strong></h4></b><h4> <b>Distance :&nbsp<strong>51.9 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>76.4 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>8.113</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-19.6824436,-44.890204&destination=-19.5127283,-44.676539 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_10d0a83c532a4bc3b477f6885040a827.setContent(html_f0641859dae9488589952517ff140d4c);
+            
+
+            circle_marker_5585584c682241e7a4e684255549b192.bindPopup(popup_10d0a83c532a4bc3b477f6885040a827)
+            ;
+
+            
+        
+    
+            var circle_marker_69cc59fb393e4c02b2ded8126f64ad0a = L.circleMarker(
+                [-18.178724, -46.8064435],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#f7e531",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#f7e531",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_f5abff0b83194c198b6fbd53d57e3454 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_ead41adf6b064766b92e0dc9def9c0b4 = $(`<div id="html_ead41adf6b064766b92e0dc9def9c0b4" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>LAGAMAR, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>13</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-18.178724,-46.8064435</strong></h4></b><h4> <b>Distance :&nbsp<strong>28.3 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>29.9 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>7.588</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-17.9873275,-46.9041459&destination=-18.178724,-46.8064435 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_f5abff0b83194c198b6fbd53d57e3454.setContent(html_ead41adf6b064766b92e0dc9def9c0b4);
+            
+
+            circle_marker_69cc59fb393e4c02b2ded8126f64ad0a.bindPopup(popup_f5abff0b83194c198b6fbd53d57e3454)
+            ;
+
+            
+        
+    
+            var circle_marker_54e77cea787848b68a25695b197d0d0e = L.circleMarker(
+                [-19.8427527, -45.4140369],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#4363d8",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#4363d8",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_7ca3e402b6c946e9a45515b9bdf64741 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_680adb27baf44750b534ccce9e885bf6 = $(`<div id="html_680adb27baf44750b534ccce9e885bf6" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>MOEMA, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>3</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.8427527,-45.4140369</strong></h4></b><h4> <b>Distance :&nbsp<strong>54.6 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>53.7 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>7.589</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-19.8777714,-44.9856483&destination=-19.8427527,-45.4140369 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_7ca3e402b6c946e9a45515b9bdf64741.setContent(html_680adb27baf44750b534ccce9e885bf6);
+            
+
+            circle_marker_54e77cea787848b68a25695b197d0d0e.bindPopup(popup_7ca3e402b6c946e9a45515b9bdf64741)
+            ;
+
+            
+        
+    
+            var circle_marker_b058a02fe3304e03955e7d161e65193e = L.circleMarker(
+                [-19.5527422, -50.5780228],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#911eb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#911eb4",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_decc14aeadd845f9b7dd9820b0e334c4 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_1003dd8b895d455993c4ae1c814398b0 = $(`<div id="html_1003dd8b895d455993c4ae1c814398b0" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>LIMEIRA DO OESTE, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>5</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.5527422,-50.5780228</strong></h4></b><h4> <b>Distance :&nbsp<strong>54.1 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>51.5 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>7.640</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-19.7270345,-50.1938389&destination=-19.5527422,-50.5780228 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_decc14aeadd845f9b7dd9820b0e334c4.setContent(html_1003dd8b895d455993c4ae1c814398b0);
+            
+
+            circle_marker_b058a02fe3304e03955e7d161e65193e.bindPopup(popup_decc14aeadd845f9b7dd9820b0e334c4)
+            ;
+
+            
+        
+    
+            var circle_marker_86a3e1df1ee247c5a0c048876d355d64 = L.circleMarker(
+                [-20.730525, -47.7525434],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#ffe119",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#ffe119",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_c2b1255e2f0e49609584956fc1e16255 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_0c46aced9cbe489a98e42c65220b7c76 = $(`<div id="html_0c46aced9cbe489a98e42c65220b7c76" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>NUPORANGA, SP ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>2</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-20.730525,-47.7525434</strong></h4></b><h4> <b>Distance :&nbsp<strong>24.6 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>26.3 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>7.522</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-20.5850618,-47.8645776&destination=-20.730525,-47.7525434 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_c2b1255e2f0e49609584956fc1e16255.setContent(html_0c46aced9cbe489a98e42c65220b7c76);
+            
+
+            circle_marker_86a3e1df1ee247c5a0c048876d355d64.bindPopup(popup_c2b1255e2f0e49609584956fc1e16255)
+            ;
+
+            
+        
+    
+            var circle_marker_016ecdf8d5784b39b598479b2ff2f1b3 = L.circleMarker(
+                [-21.0895949, -47.1533267],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#f032e6",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#f032e6",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_0c0a19815c734085b06aa24eaf54eaaa = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_d470fc50d87249dc9b005d272426d3ab = $(`<div id="html_d470fc50d87249dc9b005d272426d3ab" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>SANTO ANTONIO DA ALEGRIA, SP ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>7</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-21.0895949,-47.1533267</strong></h4></b><h4> <b>Distance :&nbsp<strong>33.6 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>43.7 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>7.024</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-21.2755425,-47.3013532&destination=-21.0895949,-47.1533267 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_0c0a19815c734085b06aa24eaf54eaaa.setContent(html_d470fc50d87249dc9b005d272426d3ab);
+            
+
+            circle_marker_016ecdf8d5784b39b598479b2ff2f1b3.bindPopup(popup_0c0a19815c734085b06aa24eaf54eaaa)
+            ;
+
+            
+        
+    
+            var circle_marker_c77beae53499491c958faeb96e134796 = L.circleMarker(
+                [-19.038245, -47.9160143],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#46f0f0",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#46f0f0",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_7156ca85e8f9482b9dc0312c6cc1b361 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_e5320804e6ee4092b3b1c76dfca357aa = $(`<div id="html_e5320804e6ee4092b3b1c76dfca357aa" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>INDIANOPOLIS, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>6</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.038245,-47.9160143</strong></h4></b><h4> <b>Distance :&nbsp<strong>42.3 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>59.2 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>7.009</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-19.1465807,-47.6783667&destination=-19.038245,-47.9160143 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_7156ca85e8f9482b9dc0312c6cc1b361.setContent(html_e5320804e6ee4092b3b1c76dfca357aa);
+            
+
+            circle_marker_c77beae53499491c958faeb96e134796.bindPopup(popup_7156ca85e8f9482b9dc0312c6cc1b361)
+            ;
+
+            
+        
+    
+            var circle_marker_351fb20bb23946579067045afe68b3d2 = L.circleMarker(
+                [-18.4359005, -49.1854118],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3cb44b",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3cb44b",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_c40f4235838845cf956c06fd1417928d = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_194a8bb2137247a49272725dd344e8a2 = $(`<div id="html_194a8bb2137247a49272725dd344e8a2" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>ARAPORA, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>21</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-18.4359005,-49.1854118</strong></h4></b><h4> <b>Distance :&nbsp<strong>6.8 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>9.3 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>6.992</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-18.4166854,-49.2170785&destination=-18.4359005,-49.1854118 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_c40f4235838845cf956c06fd1417928d.setContent(html_194a8bb2137247a49272725dd344e8a2);
+            
+
+            circle_marker_351fb20bb23946579067045afe68b3d2.bindPopup(popup_c40f4235838845cf956c06fd1417928d)
+            ;
+
+            
+        
+    
+            var circle_marker_c658ace480664c23b80a3e1104ff0dc0 = L.circleMarker(
+                [-19.8615751, -49.7731673],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#9a6324",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#9a6324",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_b21d4e7744ab4530942a4a5d12b6dfd4 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_b5e3712802e6436d8442732467d262ed = $(`<div id="html_b5e3712802e6436d8442732467d262ed" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>SAO FRANCISCO DE SALES, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>12</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.8615751,-49.7731673</strong></h4></b><h4> <b>Distance :&nbsp<strong>56.1 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>106.5 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>6.309</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-19.5340345,-49.4807685&destination=-19.8615751,-49.7731673 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_b21d4e7744ab4530942a4a5d12b6dfd4.setContent(html_b5e3712802e6436d8442732467d262ed);
+            
+
+            circle_marker_c658ace480664c23b80a3e1104ff0dc0.bindPopup(popup_b21d4e7744ab4530942a4a5d12b6dfd4)
+            ;
+
+            
+        
+    
+            var circle_marker_c3032f19a9a749c5baffd54e222f69b1 = L.circleMarker(
+                [-20.1760366, -48.6881093],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#fabebe",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#fabebe",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_452edac539f843a392913e4171a3eef4 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_fa0940add2be4773867dfb51f671d9d8 = $(`<div id="html_fa0940add2be4773867dfb51f671d9d8" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>COLOMBIA, SP ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>9</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-20.1760366,-48.6881093</strong></h4></b><h4> <b>Distance :&nbsp<strong>34.8 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>29.2 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>6.223</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-20.0263494,-48.9362703&destination=-20.1760366,-48.6881093 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_452edac539f843a392913e4171a3eef4.setContent(html_fa0940add2be4773867dfb51f671d9d8);
+            
+
+            circle_marker_c3032f19a9a749c5baffd54e222f69b1.bindPopup(popup_452edac539f843a392913e4171a3eef4)
+            ;
+
+            
+        
+    
+            var circle_marker_6442822a8f204ecdacab9f5092f18396 = L.circleMarker(
+                [-18.4884207, -49.9902245],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#f58231",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#f58231",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_9ecd38c500254719bc9eea422992cc38 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_723433a855704e3cb21a038bc448fc95 = $(`<div id="html_723433a855704e3cb21a038bc448fc95" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>INACIOLANDIA, GO ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>4</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-18.4884207,-49.9902245</strong></h4></b><h4> <b>Distance :&nbsp<strong>184.3 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>175.0 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>6.275</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-18.8472545,-50.1239346&destination=-18.4884207,-49.9902245 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_9ecd38c500254719bc9eea422992cc38.setContent(html_723433a855704e3cb21a038bc448fc95);
+            
+
+            circle_marker_6442822a8f204ecdacab9f5092f18396.bindPopup(popup_9ecd38c500254719bc9eea422992cc38)
+            ;
+
+            
+        
+    
+            var circle_marker_4b849ca5e4ea4e208ade3a398b3cd7af = L.circleMarker(
+                [-19.9088494, -48.701946],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#fabebe",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#fabebe",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_76a8d660629b4593abf834f9c58ca7d8 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_b7c866479ef04113b124b2e5b58918ae = $(`<div id="html_b7c866479ef04113b124b2e5b58918ae" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>PIRAJUBA, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>9</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.9088494,-48.701946</strong></h4></b><h4> <b>Distance :&nbsp<strong>33.9 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>34.6 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>6.491</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-20.0263494,-48.9362703&destination=-19.9088494,-48.701946 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_76a8d660629b4593abf834f9c58ca7d8.setContent(html_b7c866479ef04113b124b2e5b58918ae);
+            
+
+            circle_marker_4b849ca5e4ea4e208ade3a398b3cd7af.bindPopup(popup_76a8d660629b4593abf834f9c58ca7d8)
+            ;
+
+            
+        
+    
+            var circle_marker_91255e28f4b9443f839719447c1685a2 = L.circleMarker(
+                [-19.2121533, -49.7862967],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#9a6324",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#9a6324",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_2a18aacf11dd4cd697ba31829f4b3108 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_c47a36b4a24e448b99130ae58d23d696 = $(`<div id="html_c47a36b4a24e448b99130ae58d23d696" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>GURINHATA, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>12</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.2121533,-49.7862967</strong></h4></b><h4> <b>Distance :&nbsp<strong>63.7 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>57.5 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>5.516</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-19.5340345,-49.4807685&destination=-19.2121533,-49.7862967 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_2a18aacf11dd4cd697ba31829f4b3108.setContent(html_c47a36b4a24e448b99130ae58d23d696);
+            
+
+            circle_marker_91255e28f4b9443f839719447c1685a2.bindPopup(popup_2a18aacf11dd4cd697ba31829f4b3108)
+            ;
+
+            
+        
+    
+            var circle_marker_78ba0989df434664a20bf3c85cc2ca27 = L.circleMarker(
+                [-20.0856334, -47.7902724],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#f7820c",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#f7820c",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_f06949ed39bc497088657899dc69780b = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_dd7d4f7e4d2442989b57e5b649355798 = $(`<div id="html_dd7d4f7e4d2442989b57e5b649355798" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>ARAMINA, SP ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>17</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-20.0856334,-47.7902724</strong></h4></b><h4> <b>Distance :&nbsp<strong>44.3 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>35.1 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>5.689</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-19.7460372,-47.9339936&destination=-20.0856334,-47.7902724 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_f06949ed39bc497088657899dc69780b.setContent(html_dd7d4f7e4d2442989b57e5b649355798);
+            
+
+            circle_marker_78ba0989df434664a20bf3c85cc2ca27.bindPopup(popup_f06949ed39bc497088657899dc69780b)
+            ;
+
+            
+        
+    
+            var circle_marker_2c9e862c68b948d093281c78eb156c3d = L.circleMarker(
+                [-19.7069942, -44.5578041],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#e6beff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#e6beff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_84fd28da76a34c0680a5fe745904b0bf = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_107f3840128f4a7893fe95de88b11672 = $(`<div id="html_107f3840128f4a7893fe95de88b11672" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>SAO JOSE DA VARGINHA, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>11</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.7069942,-44.5578041</strong></h4></b><h4> <b>Distance :&nbsp<strong>21.1 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>22.5 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>5.151</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-19.8590162,-44.61021&destination=-19.7069942,-44.5578041 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_84fd28da76a34c0680a5fe745904b0bf.setContent(html_107f3840128f4a7893fe95de88b11672);
+            
+
+            circle_marker_2c9e862c68b948d093281c78eb156c3d.bindPopup(popup_84fd28da76a34c0680a5fe745904b0bf)
+            ;
+
+            
+        
+    
+            var circle_marker_32b3a7e95615420390e8739be6c3c44b = L.circleMarker(
+                [-20.4574969, -47.5905032],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#800000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#800000",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_e408a56c428f4bc3a7c25332afa09cf2 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_79432792d9e84a7eb31b88ecd3ff47d5 = $(`<div id="html_79432792d9e84a7eb31b88ecd3ff47d5" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>RIBEIRAO CORRENTE, SP ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>14</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-20.4574969,-47.5905032</strong></h4></b><h4> <b>Distance :&nbsp<strong>30.8 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>34.8 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>4.786</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-20.3358968,-47.7909635&destination=-20.4574969,-47.5905032 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_e408a56c428f4bc3a7c25332afa09cf2.setContent(html_79432792d9e84a7eb31b88ecd3ff47d5);
+            
+
+            circle_marker_32b3a7e95615420390e8739be6c3c44b.bindPopup(popup_e408a56c428f4bc3a7c25332afa09cf2)
+            ;
+
+            
+        
+    
+            var circle_marker_8b2593c5eb3f4c01869ff46507ce629a = L.circleMarker(
+                [-19.5294397, -50.3354274],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#911eb4",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#911eb4",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_c91d5f5ff72f4340a6b2cf1402d570de = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_b9bbcf1cd63f47d6924561a4f0d2c926 = $(`<div id="html_b9bbcf1cd63f47d6924561a4f0d2c926" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>UNIAO DE MINAS, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>5</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.5294397,-50.3354274</strong></h4></b><h4> <b>Distance :&nbsp<strong>38.2 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>34.6 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>4.265</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-19.7270345,-50.1938389&destination=-19.5294397,-50.3354274 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_c91d5f5ff72f4340a6b2cf1402d570de.setContent(html_b9bbcf1cd63f47d6924561a4f0d2c926);
+            
+
+            circle_marker_8b2593c5eb3f4c01869ff46507ce629a.bindPopup(popup_c91d5f5ff72f4340a6b2cf1402d570de)
+            ;
+
+            
+        
+    
+            var circle_marker_9407a1f67f1f41f39fa5dcbc5a503a26 = L.circleMarker(
+                [-20.1936224, -47.7105454],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#800000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#800000",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_41941d1ab2b5497fa9cb3125b1a66d6b = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_9fcb691adddd4d13a96894fba1455655 = $(`<div id="html_9fcb691adddd4d13a96894fba1455655" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>BURITIZAL, SP ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>14</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-20.1936224,-47.7105454</strong></h4></b><h4> <b>Distance :&nbsp<strong>27.7 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>22.8 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>4.547</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-20.3358968,-47.7909635&destination=-20.1936224,-47.7105454 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_41941d1ab2b5497fa9cb3125b1a66d6b.setContent(html_9fcb691adddd4d13a96894fba1455655);
+            
+
+            circle_marker_9407a1f67f1f41f39fa5dcbc5a503a26.bindPopup(popup_41941d1ab2b5497fa9cb3125b1a66d6b)
+            ;
+
+            
+        
+    
+            var circle_marker_7853eb45ee0f4b0e802ff12513f0a042 = L.circleMarker(
+                [-19.630487, -44.6609485],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#f58231",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#f58231",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_70f3f3214264494c952df7a61d994b34 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_820e4e9a4f8e4532875de22b365c7bac = $(`<div id="html_820e4e9a4f8e4532875de22b365c7bac" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>PEQUI, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>24</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.630487,-44.6609485</strong></h4></b><h4> <b>Distance :&nbsp<strong>43.0 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>75.4 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>4.457</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-19.6824436,-44.890204&destination=-19.630487,-44.6609485 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_70f3f3214264494c952df7a61d994b34.setContent(html_820e4e9a4f8e4532875de22b365c7bac);
+            
+
+            circle_marker_7853eb45ee0f4b0e802ff12513f0a042.bindPopup(popup_70f3f3214264494c952df7a61d994b34)
+            ;
+
+            
+        
+    
+            var circle_marker_82f0422faff34e9b8f22d3e600b17c70 = L.circleMarker(
+                [-18.6931827, -49.9447167],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#f58231",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#f58231",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_d79ebf3815c3418b80e95beeed24e280 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_8a051ad96d114d5a8d0df36543abe3bf = $(`<div id="html_8a051ad96d114d5a8d0df36543abe3bf" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>IPIACU, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>4</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-18.6931827,-49.9447167</strong></h4></b><h4> <b>Distance :&nbsp<strong>151.1 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>143.1 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>4.229</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-18.8472545,-50.1239346&destination=-18.6931827,-49.9447167 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_d79ebf3815c3418b80e95beeed24e280.setContent(html_8a051ad96d114d5a8d0df36543abe3bf);
+            
+
+            circle_marker_82f0422faff34e9b8f22d3e600b17c70.bindPopup(popup_d79ebf3815c3418b80e95beeed24e280)
+            ;
+
+            
+        
+    
+            var circle_marker_04c9d9c0ce9747ce986724937fe7d276 = L.circleMarker(
+                [-18.946948, -46.673326],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#e6194b",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#e6194b",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_9e22d75d34e7417a85241921e83576bb = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_d71a0d773c9e474796e4730fd898391f = $(`<div id="html_d71a0d773c9e474796e4730fd898391f" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>CRUZEIRO DA FORTALEZA, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>0</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-18.946948,-46.673326</strong></h4></b><h4> <b>Distance :&nbsp<strong>61.1 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>52.6 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>3.651</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-18.5961683,-46.5150076&destination=-18.946948,-46.673326 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_9e22d75d34e7417a85241921e83576bb.setContent(html_d71a0d773c9e474796e4730fd898391f);
+            
+
+            circle_marker_04c9d9c0ce9747ce986724937fe7d276.bindPopup(popup_9e22d75d34e7417a85241921e83576bb)
+            ;
+
+            
+        
+    
+            var circle_marker_009ea072915f4b33bc7bd50decda959e = L.circleMarker(
+                [-19.2281498, -47.4630354],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#46f0f0",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#46f0f0",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_10a280eb85284ab3b4221bb0e2780fff = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_cd1a66fdef304e7cb9dd6ecaf6edefae = $(`<div id="html_cd1a66fdef304e7cb9dd6ecaf6edefae" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>PEDRINOPOLIS, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>6</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.2281498,-47.4630354</strong></h4></b><h4> <b>Distance :&nbsp<strong>54.5 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>52.4 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>3.651</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-19.1465807,-47.6783667&destination=-19.2281498,-47.4630354 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_10a280eb85284ab3b4221bb0e2780fff.setContent(html_cd1a66fdef304e7cb9dd6ecaf6edefae);
+            
+
+            circle_marker_009ea072915f4b33bc7bd50decda959e.bindPopup(popup_10a280eb85284ab3b4221bb0e2780fff)
+            ;
+
+            
+        
+    
+            var circle_marker_c7c7444dccfa45f48eb1dc70817f8465 = L.circleMarker(
+                [-19.8238331, -45.9042928],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_d9783020650d48cf9c1c7b37c359b243 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_ea79dea89c234369b7e2c3d87a91183d = $(`<div id="html_ea79dea89c234369b7e2c3d87a91183d" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>CORREGO DANTA, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>10</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.8238331,-45.9042928</strong></h4></b><h4> <b>Distance :&nbsp<strong>65.1 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>58.1 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>3.168</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-19.6968881,-46.1704974&destination=-19.8238331,-45.9042928 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_d9783020650d48cf9c1c7b37c359b243.setContent(html_ea79dea89c234369b7e2c3d87a91183d);
+            
+
+            circle_marker_c7c7444dccfa45f48eb1dc70817f8465.bindPopup(popup_d9783020650d48cf9c1c7b37c359b243)
+            ;
+
+            
+        
+    
+            var circle_marker_29ea6f41b8454518b7fdcc58bc5fc995 = L.circleMarker(
+                [-19.6972963, -49.0836212],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3cb44b",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3cb44b",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_6f1620021aa645c4a24311c9d4a92087 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_b802d853db00400cb3a390d746d08112 = $(`<div id="html_b802d853db00400cb3a390d746d08112" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>COMENDADOR GOMES, MG ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>1</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-19.6972963,-49.0836212</strong></h4></b><h4> <b>Distance :&nbsp<strong>74.0 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>60.2 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>3.128</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-19.3079509,-48.9265899&destination=-19.6972963,-49.0836212 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_6f1620021aa645c4a24311c9d4a92087.setContent(html_b802d853db00400cb3a390d746d08112);
+            
+
+            circle_marker_29ea6f41b8454518b7fdcc58bc5fc995.bindPopup(popup_6f1620021aa645c4a24311c9d4a92087)
+            ;
+
+            
+        
+    
+            var circle_marker_df845fd4697b467d9a3166274a8ee007 = L.circleMarker(
+                [-21.2814597, -47.1689322],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#f032e6",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#f032e6",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_31093a6f6dc347779b60d7d9cc548546 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_5fe89eb658ee472892775d8272f0a8e4 = $(`<div id="html_5fe89eb658ee472892775d8272f0a8e4" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>CASSIA DOS COQUEIROS, SP ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>7</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-21.2814597,-47.1689322</strong></h4></b><h4> <b>Distance :&nbsp<strong>16.0 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>18.3 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>2.488</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-21.2755425,-47.3013532&destination=-21.2814597,-47.1689322 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_31093a6f6dc347779b60d7d9cc548546.setContent(html_5fe89eb658ee472892775d8272f0a8e4);
+            
+
+            circle_marker_df845fd4697b467d9a3166274a8ee007.bindPopup(popup_31093a6f6dc347779b60d7d9cc548546)
+            ;
+
+            
+        
+    
+            var circle_marker_68fa69f4c1c54419902b7f176d7cf571 = L.circleMarker(
+                [-21.2918668, -47.4288793],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#f032e6",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#f032e6",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+            
+    
+            var popup_58d37fa45026439ab0bc1adf4254a700 = L.popup({maxWidth: '400'
+            
+            });
+
+            
+                var html_703dd0c9b0b24457913815f3d39dfeb5 = $(`<div id="html_703dd0c9b0b24457913815f3d39dfeb5" style="width: 100.0%; height: 100.0%;"><h4> <b>Localidade :&nbsp<strong>SANTA CRUZ DA ESPERANCA, SP ,Brasil</strong></h4></b><h4> <b>Cluster :&nbsp<strong>7</strong></h4></b><h4> <b>Coordenadas :&nbsp<strong>-21.2918668,-47.4288793</strong></h4></b><h4> <b>Distance :&nbsp<strong>14.6 Km </strong></h4></b><h4> <b>Duration :&nbsp<strong>13.2 Mins. </strong></h4></b><h4> <b>População :&nbsp<strong>2.166</strong></h4></b><a href=https://www.google.com/maps/dir/?api=1&origin=-21.2755425,-47.3013532&destination=-21.2918668,-47.4288793 target='_blank' rel='noopener noreferrer'> Abrir no Google Maps </a></div>`)[0];
+                popup_58d37fa45026439ab0bc1adf4254a700.setContent(html_703dd0c9b0b24457913815f3d39dfeb5);
+            
+
+            circle_marker_68fa69f4c1c54419902b7f176d7cf571.bindPopup(popup_58d37fa45026439ab0bc1adf4254a700)
+            ;
+
+            
+        
+    
+        var marker_5caf26e1e2824e86886b682c3b18ad04 = L.marker(
+            [-21.1767, -47.8208],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_0d7f43bf948d47ca9b9af1044393fa75);
+        
+    
+                var beautify_icon_a8ae237c1db445c6ac7b11fcd7cf56be = new L.BeautifyIcon.icon({
+  "backgroundColor": "transparent",
+  "borderColor": "transparent",
+  "borderWidth": 3,
+  "icon": "home",
+  "innerIconStyle": "color:blue;font-size:20px;",
+  "isAlphaNumericIcon": false,
+  "spin": false,
+  "textColor": "#000"
+})
+                marker_5caf26e1e2824e86886b682c3b18ad04.setIcon(beautify_icon_a8ae237c1db445c6ac7b11fcd7cf56be);
+            
+    
+        marker_5caf26e1e2824e86886b682c3b18ad04.bindTooltip(
+            `<div>`
+            + `CD Ribeirão Preto` + `</div>`,
+            {"sticky": true}
+        );
+        
+</script>
